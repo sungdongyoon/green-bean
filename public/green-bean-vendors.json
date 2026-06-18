@@ -1,0 +1,1618 @@
+{
+  "scrapedAt": "2026-06-16T13:08:05.836Z",
+  "currency": "KRW",
+  "note": "가격과 재고 상태는 수집 시점의 공개 판매 페이지 기준입니다. 로그인/사업자 등급별 가격은 반영되지 않을 수 있습니다.",
+  "vendors": [
+    {
+      "key": "micoffee",
+      "name": "엠아이커피",
+      "siteUrl": "https://www.micoffee.co.kr/",
+      "sourceUrl": "https://www.micoffee.co.kr/",
+      "purchaseUrl": "https://www.micoffee.co.kr/goods/goods_list.php?cateCd=024",
+      "status": "ok",
+      "productCount": 13,
+      "products": [
+        {
+          "productNo": "1000005598",
+          "name": "[재입고] 에티오피아 시다모 G1 봄베 와인 내추럴",
+          "category": "AFRICA",
+          "priceKrw": 32500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#재입고",
+            "#향미",
+            "#산미",
+            "#신규입고"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000005598/image/add2/1000005598_add2_03.png",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000005598&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000721",
+          "name": "[재입고] 브라질 산타이네스 펄프드 내추럴",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 20000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#MI단독",
+            "#재입고",
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000000721/image/add2/1000000721_add2_095.png",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000000721&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007486",
+          "name": "콜롬비아 아폰테 타블론 데 고메즈 카투라 워시드",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 25500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#산미",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007486/image/add2/1000007486_add2_085.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007486&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007485",
+          "name": "콜롬비아 아폰테 카투라 허니",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 26500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007485/image/add2/1000007485_add2_054.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007485&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000003808",
+          "name": "[재입고] 과테말라 우에우에테낭고 킨 워시드",
+          "category": "CENTRAL AMERICA",
+          "priceKrw": 21500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#재입고",
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000003808/image/add2/1000003808_add2_086.png",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000003808&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000005581",
+          "name": "인도 리버데일 SL-9 워시드",
+          "category": "ASIA & OTHERS",
+          "priceKrw": 20000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#밸런스",
+            "#단맛",
+            "#신규입고"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000005581/image/add2/1000005581_add2_07.png",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000005581&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000724",
+          "name": "인도 카피로얄 AA",
+          "category": "ASIA & OTHERS",
+          "priceKrw": 15500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#바디",
+            "#단맛",
+            "#신규입고"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000000724/image/add2/1000000724_add2_0100.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000000724&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007405",
+          "name": "[500g 행사] 콜롬비아 라스 마가리타스 CGLE-17 워시드",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 49750,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#이벤트",
+            "#밸런스",
+            "#향미"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007405/image/add2/1000006886_add2_053.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007405&mtn=19%5E%7C%5ENEW+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007509",
+          "name": "[이주의 특가] 브라질 산타루시아 펄프드 내추럴",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 15500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#이벤트",
+            "#재입고",
+            "#향미",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007509/image/add2/1000007509_add2_095.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007509&mtn=20%5E%7C%5EBEST+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007494",
+          "name": "[6월 추천생두] 콜롬비아 페르가미노 카투라 워시드",
+          "category": "SOUTH AMERICA",
+          "priceKrw": 21000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#이벤트",
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007494/image/add2/1000007494_add2_077.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007494&mtn=20%5E%7C%5EBEST+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007495",
+          "name": "[6월 추천생두] 온두라스 산타로사 SHG",
+          "category": "CENTRAL AMERICA",
+          "priceKrw": 16000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#이벤트",
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007495/image/add2/1000007495_add2_094.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007495&mtn=20%5E%7C%5EBEST+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000725",
+          "name": "과테말라 안티구아 파노라마 SHB EP",
+          "category": "CENTRAL AMERICA",
+          "priceKrw": 21000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000000725/image/add2/1000000725_add2_012.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000000725&mtn=20%5E%7C%5EBEST+ITEMS%5E%7C%5En"
+        },
+        {
+          "productNo": "1000007102",
+          "name": "파나마 가리도 하이랜드 파넬라 둘세 게이샤 내추럴",
+          "category": "CENTRAL AMERICA",
+          "priceKrw": 67000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [
+            "#밸런스",
+            "#단맛"
+          ],
+          "imageUrl": "https://godomall.speedycdn.net/668a28fbd36a1770868cf5eade6b4db9/goods/1000007102/image/add2/1000007102_add2_024.jpg",
+          "productUrl": "https://www.micoffee.co.kr/goods/goods_view.php?goodsNo=1000007102&mtn=20%5E%7C%5EBEST+ITEMS%5E%7C%5En"
+        }
+      ]
+    },
+    {
+      "key": "covinscoffee",
+      "name": "코빈즈커피",
+      "siteUrl": null,
+      "sourceUrl": null,
+      "purchaseUrl": null,
+      "status": "needs_source_url",
+      "products": [],
+      "error": "공식 생두 구매 페이지를 확인하지 못했습니다. 도메인 또는 구매 URL 확인이 필요합니다."
+    },
+    {
+      "key": "coffeelibre",
+      "name": "커피리브레",
+      "siteUrl": "https://coffeelibre.kr/",
+      "sourceUrl": "https://coffeelibre.kr/product/list.html?cate_no=48",
+      "purchaseUrl": "https://coffeelibre.kr/product/list.html?cate_no=48",
+      "status": "ok",
+      "productCount": 50,
+      "products": [
+        {
+          "productNo": "6175",
+          "name": "[생두] 에티오피아 카파 비타 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 15800,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "플로럴, 올리브, 허브, 오렌지, 살구, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/e3b9aed77e3ecbf4fde190eceb2fbd52.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6175&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6559",
+          "name": "[생두] 온두라스 푸링글라 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 15800,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "오렌지, 청사과, 플로럴, 사탕수수, 시럽, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202512/d3a074392affa8043c7a8a6a8ba5924b.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6559&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6933",
+          "name": "[생두] 온두라스 렘피라 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 15800,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "자두, 복숭아, 자몽, 카라멜, 갈색설탕, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202512/dc5ea335fca32f6f8b461aec66f3b280.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6933&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7180",
+          "name": "[New Crop / 생두] 르완다 무지나",
+          "category": "생두",
+          "priceKrw": 16000,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "체리, 블루베리, 오렌지주스, 사탕수수, 캐러멜, 바닐라"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202411/6c2b708b85a5b1cc6c32e5777fb4f092.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7180&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6525",
+          "name": "[생두] 코스타리카 산타 테레사 2000",
+          "category": "생두",
+          "priceKrw": 16200,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "청사과, 오렌지, 시트러스, 시럽, 살구, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/ccc45c1fa69ebe11a6eeefb5ad42a5c8.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6525&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6527",
+          "name": "[생두] 코스타리카 산타 테레사 2000 라 몬타냐",
+          "category": "생두",
+          "priceKrw": 16200,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "황도, 오렌지, 열대과일, 사탕수수, 바닐라, 쥬시"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/5391760bc2d39b7f409a2bd9bb6b0def.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6527&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7178",
+          "name": "[생두] 과테말라 우에우에테낭고 우니온 칸티닐",
+          "category": "생두",
+          "priceKrw": 16600,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "황도, 사과잼, 호두, 초콜릿, 바닐라, 메이플시럽, 묵직한바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/174394d35121d872fedb6c4975d0a200.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7178&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6439",
+          "name": "[생두] 에티오피아 카파 비타 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 16800,
+          "currency": "KRW",
+          "unit": "10kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "10kg Box 진공포장",
+            "플로럴, 올리브, 허브, 오렌지, 살구, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/ccd24b7bae00fd838adeef004581eb25.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6439&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7623",
+          "name": "[New Crop / 생두] 브라질 술 데 미나스 내추럴 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 16900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "밀크초콜릿, 볶은아몬드, 시트러스, 캐러멜, 라운드바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/711d9d219a039aff251a94be0be0a8a9.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7623&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6237",
+          "name": "[생두] 온두라스 마리사벨 블렌드",
+          "category": "생두",
+          "priceKrw": 17000,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "복숭아, 오렌지잼, 아몬드, 캐러멜, 밀크초콜릿, 부드러운바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/c7ebc497fb7a739b848bcc7d29c58d81.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6237&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7687",
+          "name": "[New Crop / 생두] 브라질 세하도 내추럴 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 17200,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "캐러멜, 초콜릿, 카카오, 오렌지, 묵직한바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/711d9d219a039aff251a94be0be0a8a9.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7687&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6863",
+          "name": "[생두] 니카라과 핀카 리브레 엔시노",
+          "category": "생두",
+          "priceKrw": 17500,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "체리, 복숭아, 오렌지, 크랜베리, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/82ca981c2baec0fb99a044c3974b1dd2.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6863&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7458",
+          "name": "[New Crop / 생두] 인도 바드라 아라비카",
+          "category": "생두",
+          "priceKrw": 17500,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "볶은아몬드, 오렌지, 밀크초콜릿, 좋은단맛, 묵직한바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202307/149d2d3746d022472dfce6a99802ba7b.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7458&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6678",
+          "name": "[생두] 에티오피아 시다모 벤사 두바",
+          "category": "생두",
+          "priceKrw": 17700,
+          "currency": "KRW",
+          "unit": "10kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "10kg Box 진공포장",
+            "복숭아, 오렌지, 베르가못, 플로럴, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/c664cdf11c996aa54d70a43db5072573.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6678&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6200",
+          "name": "[소분] 에티오피아 카파 비타 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 17800,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "플로럴, 올리브, 허브, 오렌지, 살구, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/fcd6433717844878c4a1c01d5343c72e.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6200&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6637",
+          "name": "[소분] 온두라스 푸링글라 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 17800,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "오렌지, 청사과, 플로럴, 사탕수수, 시럽, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202512/3108d1d59f14698afc3f19e34478cc27.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6637&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7004",
+          "name": "[소분] 온두라스 렘피라 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 17800,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "자두, 복숭아, 자몽, 카라멜, 갈색설탕, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202512/ecac3573cb1d4263f3bc1f00e1df164c.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7004&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6314",
+          "name": "[생두] 과테말라 엔트레 볼카네스",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "청사과, 감귤, 헤이즐넛, 버터스카치, 밀크초콜릿, 좋은밸런스"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/6aef86a375d7706b652490119e96f38a.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6314&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6318",
+          "name": "[생두] 과테말라 엘 템픽스케",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "살구, 빨간사과, 오렌지, 사탕 수수, 캐러멜, 긴 애프터"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/4ecf18d2a031065fd22998bc9c0450a5.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6318&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7005",
+          "name": "[생두] 과테말라 호코테",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "오렌지, 사탕수수, 볶은아몬드, 메이플시럽, 바닐라, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/bcf067bb055ae35a9df7c5e41b53d371.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7005&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7008",
+          "name": "[생두] 과테말라 란초 라스 베가스 Lot.1",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "체리, 자두, 황도, 레드오렌지, 시럽, 사탕수수"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/444c8288ccc802b2859ad60257f62ce2.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7008&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7012",
+          "name": "[생두] 과테말라 엘 타로 Lot.2",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "오렌지, 크랜베리, 사과, 복숭아, 캐러멜, 밀크초콜릿"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/ed1d219d5165caa6f0e4492775522df9.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7012&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7013",
+          "name": "[생두] 과테말라 팔로 블랑코",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "오렌지, 사과, 복숭아, 메이플시럽, 캐러멜, 밀크초콜릿"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/6ec36edba6bfd9598523257dfea18e3a.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7013&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7015",
+          "name": "[생두] 과테말라 엘 디비노 니뇨",
+          "category": "생두",
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "복숭아, 사과, 스파이시, 사탕수수, 캐러멜, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/275022fcd08d407ceb723a8f42552afa.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7015&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6604",
+          "name": "[생두] 온두라스 파라이네마 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 18000,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "플로럴, 복숭아, 크랜베리, 사과, 메이플시럽, 크리미바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202207/3decaeb231804be68bea79b10d7ade51.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6604&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7181",
+          "name": "[New Crop / 생두] 르완다 부산제",
+          "category": "생두",
+          "priceKrw": 18000,
+          "currency": "KRW",
+          "unit": "20kg 지대포장",
+          "status": "available",
+          "tags": [
+            "20kg 지대포장",
+            "블루베리, 파인애플, 체리, 플로럴, 조청, 당밀"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/48d2847440a5ae666b0d93a7734bf4a5.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7181&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7204",
+          "name": "[New Crop / 소분] 르완다 무지나",
+          "category": "생두",
+          "priceKrw": 18000,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "체리, 블루베리, 오렌지주스, 사탕수수, 캐러멜, 바닐라"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202411/6c2b708b85a5b1cc6c32e5777fb4f092.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7204&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6564",
+          "name": "[소분] 코스타리카 산타 테레사 2000",
+          "category": "생두",
+          "priceKrw": 18200,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "청사과, 오렌지, 시트러스, 시럽, 살구, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/c8190e87423ac4690e26674c7d618ad2.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6564&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6565",
+          "name": "[소분] 코스타리카 산타 테레사 2000 라 몬타냐",
+          "category": "생두",
+          "priceKrw": 18200,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "황도, 오렌지, 열대과일, 사탕수수, 바닐라, 쥬시"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/b37ddadfcbca04d6fb4178dbeacd01ca.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6565&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6436",
+          "name": "[생두] 과테말라 우에우에테낭고 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 18500,
+          "currency": "KRW",
+          "unit": "10kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "10kg Box 진공포장",
+            "레드오렌지, 사과, 블루베리, 메이플시럽, 캐러멜, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/ef1272f30342c4229ccfd067e2dffb2e.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6436&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7055",
+          "name": "[생두] 온두라스 엘 가나도 파라이네마",
+          "category": "생두",
+          "priceKrw": 18600,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "자두, 체리, 석류, 오렌지, 캐러멜, 흑설탕"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/9908c53024b91ecb825795eb89fbaadd.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7055&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7179",
+          "name": "[소분] 과테말라 우에우에테낭고 우니온 칸티닐",
+          "category": "생두",
+          "priceKrw": 18600,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "황도, 사과잼, 호두, 초콜릿, 바닐라, 메이플시럽, 묵직한바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/10e675bbdc2e73ef611703a6668afab0.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7179&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6420",
+          "name": "[소분] 에티오피아 시다모 벤사 두바",
+          "category": "생두",
+          "priceKrw": 18700,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "복숭아, 오렌지, 베르가못, 플로럴, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/4a2ac48534cb90eb7ef3fdd0e95b99aa.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6420&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6801",
+          "name": "[생두] 니카라과 라스 마리아스 라스 골론드리나스",
+          "category": "생두",
+          "priceKrw": 18700,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "자두, 살구, 오렌지필, 만다린, 사과, 시럽"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/23e814fd82a0b1017ef476b2fb5fa0df.png",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6801&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6808",
+          "name": "[생두] 니카라과 로 프로메티도",
+          "category": "생두",
+          "priceKrw": 18700,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "열대과일, 살구, 체리, 시트러스, 시럽, 사탕수수"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/a329fb07b247630e69bf4f5fde1bb616.png",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6808&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6809",
+          "name": "[생두] 니카라과 운 레갈로 데 디오스",
+          "category": "생두",
+          "priceKrw": 18700,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "복숭아, 감귤주스, 블루베리, 청사과, 황설탕, 청포도"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/0c28baa5b8defb73c56aba6bd4b532e7.png",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6809&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6435",
+          "name": "[생두] 과테말라 엔트레 볼카네스",
+          "category": "생두",
+          "priceKrw": 18900,
+          "currency": "KRW",
+          "unit": "10kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "10kg Box 진공포장",
+            "청사과, 감귤, 헤이즐넛, 버터스카치, 밀크초콜릿, 좋은밸런스"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/37d0a7c8b9ebcc8a96e9bb25c16370c5.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6435&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6852",
+          "name": "[생두] 온두라스 몬테시요스",
+          "category": "생두",
+          "priceKrw": 18900,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "청사과, 크랜베리, 오렌지, 열대과일, 시럽, 쥬시"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/bf5b640d06971fea1e5ae38a1ea76128.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6852&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7017",
+          "name": "[생두] 온두라스 레예스",
+          "category": "생두",
+          "priceKrw": 18900,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "라벤더, 오렌지, 복숭아, 자두, 베리, 시럽"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/c3fd681f6ee71a54fe1fecc3558e1c9d.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7017&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7033",
+          "name": "[생두] 온두라스 바냐데로스",
+          "category": "생두",
+          "priceKrw": 18900,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "라벤더, 레몬, 청사과, 파인애플, 사탕수수, 밀크초콜릿"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/12c44c751c2442d23fe9a0392774adc4.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7033&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7624",
+          "name": "[New Crop / 소분] 브라질 술 데 미나스 내추럴 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 18900,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "밀크초콜릿, 볶은아몬드, 시트러스, 캐러멜, 라운드바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/711d9d219a039aff251a94be0be0a8a9.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7624&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6239",
+          "name": "[소분] 온두라스 마리사벨 블렌드",
+          "category": "생두",
+          "priceKrw": 19000,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "복숭아, 오렌지잼, 아몬드, 캐러멜, 밀크초콜릿, 부드러운바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/c2eb2412c64184a9334dc47e6f547b2c.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6239&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7688",
+          "name": "[New Crop / 소분] 브라질 세하도 내추럴 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 19200,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "캐러멜, 초콜릿, 카카오, 오렌지, 묵직한바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/711d9d219a039aff251a94be0be0a8a9.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7688&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6774",
+          "name": "[생두] 니카라과 오호 데 아구아 모고톤",
+          "category": "생두",
+          "priceKrw": 19300,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "블랙커런트, 블랙베리, 자두, 베리, 사과잼, 사탕수수"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/bfc39f35c58cfccbdcfd9e12aba395ef.png",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6774&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6169",
+          "name": "[소분] 과테말라 우에우에테낭고 리브레 셀렉션",
+          "category": "생두",
+          "priceKrw": 19500,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "레드오렌지, 사과, 블루베리, 메이플시럽, 캐러멜, 라운드바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/6e9a6538b4d6ce37b5c1913e285b21cc.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6169&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6951",
+          "name": "[소분] 니카라과 핀카 리브레 엔시노",
+          "category": "생두",
+          "priceKrw": 19500,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "체리, 복숭아, 오렌지, 크랜베리, 시럽, 실키바디"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202206/82ca981c2baec0fb99a044c3974b1dd2.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6951&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7143",
+          "name": "[소분] 파나마 핀카 하트만 카투라",
+          "category": "생두",
+          "priceKrw": 19500,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "빨간사과, 자두, 복숭아, 청포도, 캐러멜, 당밀"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/86fe4f18bc8aa2fbb2aed6099437e6c3.png",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7143&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "7460",
+          "name": "[New Crop / 소분] 인도 바드라 아라비카",
+          "category": "생두",
+          "priceKrw": 19500,
+          "currency": "KRW",
+          "unit": "1kg 소분 진공포장",
+          "status": "available",
+          "tags": [
+            "1kg 소분 진공포장",
+            "볶은아몬드, 오렌지, 밀크초콜릿, 좋은단맛, 묵직한바디, 클린"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202307/149d2d3746d022472dfce6a99802ba7b.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=7460&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6284",
+          "name": "[생두] 케냐 응고라노 AA",
+          "category": "생두",
+          "priceKrw": 19800,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "자두, 블랙커런트, 히비스커스, 베리, 라운드바디, 롱애프터"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202508/87a2ef8b1c86e1e3ca31fd4d3ba2228b.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6284&cate_no=48&display_group=1"
+        },
+        {
+          "productNo": "6455",
+          "name": "[생두] 케냐 카구모 AA",
+          "category": "생두",
+          "priceKrw": 19800,
+          "currency": "KRW",
+          "unit": "30kg Box 진공포장",
+          "status": "available",
+          "tags": [
+            "30kg Box 진공포장",
+            "블랙커런트, 라즈베리, 플로럴, 로즈메리, 밀크초콜릿, 조청"
+          ],
+          "imageUrl": "https://coffeelibre.kr/web/product/medium/202602/fa697aca05605b9502da53d73195e0c6.jpg",
+          "productUrl": "https://coffeelibre.kr/product/detail.html?product_no=6455&cate_no=48&display_group=1"
+        }
+      ]
+    },
+    {
+      "key": "momos",
+      "name": "모모스커피",
+      "siteUrl": "https://momos.co.kr/",
+      "sourceUrl": "https://momos.co.kr/category/%EC%83%9D%EB%91%90/64/",
+      "purchaseUrl": "https://momos.co.kr/category/%EC%83%9D%EB%91%90/64/",
+      "status": "ok",
+      "productCount": 20,
+      "products": [
+        {
+          "productNo": "2810",
+          "name": "[생두] Kenya Kamoko Peaberry Fully Washed",
+          "category": "생두",
+          "priceKrw": 25500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/49d1f7e8f2b20dbca1403d956b78e661.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-kamoko-peaberry-fully-washed/2810/category/64/display/1/"
+        },
+        {
+          "productNo": "2809",
+          "name": "[생두] Brazil Baba Blend Red Catuai Natural",
+          "category": "생두",
+          "priceKrw": 16800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202603/0ad835ccf24cf38e7b029822a92c2d21.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-brazil-baba-blend-red-catuai-natural/2809/category/64/display/1/"
+        },
+        {
+          "productNo": "2806",
+          "name": "[생두] Kenya Kagunyu Natural Heavy",
+          "category": "생두",
+          "priceKrw": 33000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/2326a8db4e9e29fa55578758ce5c8d9b.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-kagunyu-natural-heavy/2806/category/64/display/1/"
+        },
+        {
+          "productNo": "2802",
+          "name": "[생두] Ethiopia Guji Buku Sayisa G1 Natural",
+          "category": "생두",
+          "priceKrw": 26500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/b5dd308a308efe7dce32b710846130a4.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-ethiopia-guji-buku-sayisa-g1-natural/2802/category/64/display/1/"
+        },
+        {
+          "productNo": "2800",
+          "name": "[생두] Kenya Kangiri Peaberry Fully Washed",
+          "category": "생두",
+          "priceKrw": 25500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/a5d0c09a5886d479ca8f0a7153512445.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-kangiri-peaberry-fully-washed/2800/category/64/display/1/"
+        },
+        {
+          "productNo": "2799",
+          "name": "[생두] Kenya Gakundu Peaberry Fully Washed",
+          "category": "생두",
+          "priceKrw": 23000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/0d92ba0697009e969e5840517030bcd3.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-gakundu-peaberry-fully-washed/2799/category/64/display/1/"
+        },
+        {
+          "productNo": "2798",
+          "name": "[생두] Kenya Miiri Peaberry Fully Washed",
+          "category": "생두",
+          "priceKrw": 23000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/2d03a43482108e3074c2c90470930b70.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-miiri-peaberry-fully-washed/2798/category/64/display/1/"
+        },
+        {
+          "productNo": "2796",
+          "name": "[생두] Kenya Kagunyu AA Fully Washed #11",
+          "category": "생두",
+          "priceKrw": 32000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/2f3db6b5e6a63d88d69283445388476e.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-kagunyu-aa-fully-washed-11/2796/category/64/display/1/"
+        },
+        {
+          "productNo": "2795",
+          "name": "[생두] Kenya Thunguri AB Fully Washed",
+          "category": "생두",
+          "priceKrw": 28000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/764243918023bfbe855f480376f1eab7.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-thunguri-ab-fully-washed/2795/category/64/display/1/"
+        },
+        {
+          "productNo": "2793",
+          "name": "[생두] Kenya Thunguri AA Fully Washed #1",
+          "category": "생두",
+          "priceKrw": 32000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202606/b0977c08ece7f955a791c065ee7c4ae4.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-kenya-thunguri-aa-fully-washed-1/2793/category/64/display/1/"
+        },
+        {
+          "productNo": "2752",
+          "name": "[생두] Ecuador Lugmapata Typica Mejorado Selection Washed",
+          "category": "생두",
+          "priceKrw": 59000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/c0ae517354af3d728056db2d662e7bfd.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-ecuador-lugmapata-typica-mejorado-selection-washed/2752/category/64/display/1/"
+        },
+        {
+          "productNo": "2751",
+          "name": "[생두] Ecuador Eliza Sidra DF Washed",
+          "category": "생두",
+          "priceKrw": 85000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/b820e34c525ae64b1e7544b3316db346.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-ecuador-eliza-sidra-df-washed/2751/category/64/display/1/"
+        },
+        {
+          "productNo": "2750",
+          "name": "[생두] Ecuador La Noria Green Gesha Lot 2 LA Washed",
+          "category": "생두",
+          "priceKrw": 110000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/e7ec53140385906bfe5a8947e32f6f8e.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-ecuador-la-noria-green-gesha-lot-2-la-washed/2750/category/64/display/1/"
+        },
+        {
+          "productNo": "2735",
+          "name": "[생두] Bolivia Palli Family Caturra Washed",
+          "category": "생두",
+          "priceKrw": 19500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/87f1fb30bc9dd357a4b25b8c5bcfff50.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-palli-family-caturra-washed/2735/category/64/display/1/"
+        },
+        {
+          "productNo": "2734",
+          "name": "[생두] Bolivia Waliki Java Washed",
+          "category": "생두",
+          "priceKrw": 36500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/3cff72104f51bdfef9f9c3b34aea8a0e.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-waliki-java-washed/2734/category/64/display/1/"
+        },
+        {
+          "productNo": "2733",
+          "name": "[생두] Bolivia Trapiche Java Coco Natural",
+          "category": "생두",
+          "priceKrw": 40000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202605/ff33ca99e6c0e0f52d8f2af19172ea8a.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-trapiche-java-coco-natural/2733/category/64/display/1/"
+        },
+        {
+          "productNo": "2732",
+          "name": "[생두] Bolivia Los Rodriguez Bourbon Washed",
+          "category": "생두",
+          "priceKrw": 24500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/f99f3f2feb928922d023f33868d8c929.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-los-rodriguez-bourbon-washed/2732/category/64/display/1/"
+        },
+        {
+          "productNo": "2731",
+          "name": "[생두] Bolivia Los Rodriguez Bourbon Caturra Honey",
+          "category": "생두",
+          "priceKrw": 25500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/cbe9826437e01c03800ef89d2dfc6a85.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-los-rodriguez-bourbon-caturra-honey/2731/category/64/display/1/"
+        },
+        {
+          "productNo": "2730",
+          "name": "[생두] Bolivia Los Rodriguez Caturra Washed",
+          "category": "생두",
+          "priceKrw": 22000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/ea8300d294b22f911ad2d5a7147a5cc2.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-los-rodriguez-caturra-washed/2730/category/64/display/1/"
+        },
+        {
+          "productNo": "2728",
+          "name": "[생두] Bolivia Los Rodriguez Java Washed",
+          "category": "생두",
+          "priceKrw": 39000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://momos.co.kr/web/product/medium/202604/f296cfe579425a299873e18e21389485.jpg",
+          "productUrl": "https://momos.co.kr/product/%EC%83%9D%EB%91%90-bolivia-los-rodriguez-java-washed/2728/category/64/display/1/"
+        }
+      ]
+    },
+    {
+      "key": "gsc",
+      "name": "GSC 인터내셔널",
+      "siteUrl": "https://www.gsc.coffee/",
+      "sourceUrl": "https://www.gsc.coffee/",
+      "purchaseUrl": "https://www.gsc.coffee/goods/goods_list.php?cateCd=014",
+      "status": "ok",
+      "productCount": 30,
+      "products": [
+        {
+          "productNo": "1000000733",
+          "name": "과테말라 라 에르모사 SHB EP 아카테낭고 마마 카타 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 20500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000733/image/main/1000000733_main_092.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000733&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001209",
+          "name": "브라질 파젠다 엄 보이아 문도노보 내추럴 · 6월세일",
+          "category": null,
+          "priceKrw": 20700,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001209/image/main/1000001209_main_048.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001209&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001333",
+          "name": "콜롬비아 산 가브리엘 버번 치로소 아나에어로빅 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 32800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001333/image/main/1000001333_main_031.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001333&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001334",
+          "name": "콜롬비아 라 리제르바 카투라 아나에어로빅 허니 (리치) · 6월세일",
+          "category": null,
+          "priceKrw": 44000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001334/image/main/1000001334_main_098.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001334&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001315",
+          "name": "브라질 파젠다 엄 옐로우 버번 보인하스 다크룸 · 6월세일",
+          "category": null,
+          "priceKrw": 25000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001315/image/main/1000001315_main_057.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001315&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001223",
+          "name": "브라질 NY2/3 SC14/16 슈가 케인 디카페인 · 6월세일",
+          "category": null,
+          "priceKrw": 22500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001223/image/main/1000001223_main_017.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001223&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000952",
+          "name": "니카라과 로부스타 누에바 기니아 카리브 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 13200,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000952/image/main/1000000952_main_072.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000952&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001307",
+          "name": "멕시코 라 라하 카투라 & 가르니카 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 20400,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001307/image/main/1000001307_main_011.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001307&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000764",
+          "name": "온두라스 라스 플로레스 버번 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 24500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000764/image/main/1000000764_main_024.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000764&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001283",
+          "name": "온두라스 레이나 팜 레드 카투아이 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 24800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001283/image/main/1000001283_main_090.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001283&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001144",
+          "name": "온두라스 엘 나랑호 티피카 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 24800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001144/image/main/1000001144_main_057.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001144&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000809",
+          "name": "콜롬비아 수프리모 카우카 포파얀 · 6월세일",
+          "category": null,
+          "priceKrw": 17800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000809/image/main/1000000809_main_058.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000809&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000924",
+          "name": "베트남 로부스타 G1 폴리쉬드 · 6월세일",
+          "category": null,
+          "priceKrw": 11700,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000924/image/main/1000000924_main_017.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000924&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001077",
+          "name": "인도 마이소르너겟 엑스트라 볼드 · 6월세일",
+          "category": null,
+          "priceKrw": 18800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001077/image/main/1000001077_main_098.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001077&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001287",
+          "name": "파푸아 뉴기니 웨스턴 하이랜드 플랜테이션 A SC 17 풀리 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 17900,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001287/image/main/1000001287_main_033.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001287&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001319",
+          "name": "브라질 파젠다 엄 수프림 펄프드 내추럴 · 6월세일",
+          "category": null,
+          "priceKrw": 48700,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001319/image/main/1000001319_main_026.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001319&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001335",
+          "name": "브라질 NY2 SC17/18 FC 레드 버번 · 6월세일",
+          "category": null,
+          "priceKrw": 17400,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001335/image/main/1000001335_main_064.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001335&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001336",
+          "name": "에티오피아 G1 구지 샤키소 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 28400,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001336/image/main/1000001336_main_02.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001336&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000288",
+          "name": "브라질 NY2/3 스위스 워터 디카페인 · 6월세일",
+          "category": null,
+          "priceKrw": 25200,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000288/image/main/1000000288_main_073.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000288&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000293",
+          "name": "콜롬비아 수프리모 스위스 워터 디카페인 · 6월세일",
+          "category": null,
+          "priceKrw": 25800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000293/image/main/1000000293_main_01.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000293&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000000284",
+          "name": "브라질 NY2 FC 17/18 모지아나 · 6월세일",
+          "category": null,
+          "priceKrw": 15900,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000000284/image/main/1000000284_main_086.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000000284&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001324",
+          "name": "부룬디 A 은고지 기헤레 풀리 워시드 · 6월세일",
+          "category": null,
+          "priceKrw": 22900,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001324/image/main/1000001324_main_042.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001324&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001175",
+          "name": "코스타리카 핀카 단토 센트로아메리카노 라이트 허니 · 6월세일",
+          "category": null,
+          "priceKrw": 27500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001175/image/main/1000001175_main_032.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001175&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001276",
+          "name": "코스타리카 SHB 살라카 H3 라이트 허니 · 6월세일",
+          "category": null,
+          "priceKrw": 25500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001276/image/main/1000001276_main_066.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001276&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001325",
+          "name": "과테말라 SHB EP 슈가케인 디카페인",
+          "category": null,
+          "priceKrw": 25800,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001325/image/main/1000001325_main_019.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001325&mtn=3%5E%7C%5ESALE%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001214",
+          "name": "브라질 파젠다 엄 아라라 펄프드 내추럴",
+          "category": null,
+          "priceKrw": 39500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001214/image/main/1000001214_main_083.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001214&mtn=7%5E%7C%5ERECOMMENDATION%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001314",
+          "name": "브라질 파젠다 엄 옐로우 버번 보인하스 내추럴 · 6월세일",
+          "category": null,
+          "priceKrw": 23500,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001314/image/main/1000001314_main_090.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001314&mtn=7%5E%7C%5ERECOMMENDATION%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001316",
+          "name": "브라질 파젠다 엄 레드 카투카이 L-S2 펄프드 내추럴",
+          "category": null,
+          "priceKrw": 49000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001316/image/main/1000001316_main_025.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001316&mtn=7%5E%7C%5ERECOMMENDATION%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001317",
+          "name": "브라질 파젠다 엄 레드 카투카이 L-MB5 펄프드 내추럴",
+          "category": null,
+          "priceKrw": 30000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001317/image/main/1000001317_main_04.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001317&mtn=7%5E%7C%5ERECOMMENDATION%5E%7C%5En"
+        },
+        {
+          "productNo": "1000001318",
+          "name": "브라질 파젠다 엄 레드 카투카이 솔리 내추럴",
+          "category": null,
+          "priceKrw": 47000,
+          "currency": "KRW",
+          "unit": null,
+          "status": "available",
+          "tags": [],
+          "imageUrl": "https://godomall.speedycdn.net/810e637ae2f1ef6952be88588ba2fd01/goods/1000001318/image/main/1000001318_main_09.jpg",
+          "productUrl": "https://www.gsc.coffee/goods/goods_view.php?goodsNo=1000001318&mtn=7%5E%7C%5ERECOMMENDATION%5E%7C%5En"
+        }
+      ]
+    }
+  ]
+}

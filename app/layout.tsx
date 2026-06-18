@@ -4,6 +4,7 @@ import Header from "../components/common/Header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/common/AppSidebar";
+import QueryProvider from "@/provider/QueryProvider";
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
 
@@ -22,15 +23,20 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="min-h-screen">
-        <SidebarProvider>
-          <TooltipProvider>
-            <AppSidebar />
-            <div className="flex min-h-screen flex-1 flex-col">
-              <Header />
-              <main>{children}</main>
-            </div>
-          </TooltipProvider>
-        </SidebarProvider>
+        <QueryProvider>
+          <SidebarProvider>
+            <TooltipProvider>
+              <AppSidebar />
+              <div className="w-full min-h-screen flex flex-col">
+                <Header />
+                <main>
+                  <SidebarTrigger />
+                  {children}
+                </main>
+              </div>
+            </TooltipProvider>
+          </SidebarProvider>
+        </QueryProvider>
       </body>
     </html>
   );
