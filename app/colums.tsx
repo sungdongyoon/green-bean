@@ -1,7 +1,4 @@
-"use client";
-
 import { ColumnDef } from "@tanstack/react-table";
-import React from "react";
 
 export type GreenBean = {
   id: string;
