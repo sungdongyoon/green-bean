@@ -3,24 +3,29 @@
 import { ColumnDef } from "@tanstack/react-table";
 import React from "react";
 
-export type Payment = {
+export type GreenBean = {
   id: string;
-  amount: number;
-  status: "pending" | "processing" | "success" | "failed";
-  email: string;
+  vendorName: string;
+  name: string;
+  unit: string;
+  priceKrw: number;
 };
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<GreenBean>[] = [
   {
-    accessorKey: "status",
-    header: "Status",
+    accessorKey: "vendorName",
+    header: "Vendor",
   },
   {
-    accessorKey: "email",
-    header: "Email",
+    accessorKey: "name",
+    header: "Name",
   },
   {
-    accessorKey: "amount",
-    header: "Amount",
+    accessorKey: "unit",
+    header: "Unit",
+  },
+  {
+    accessorKey: "priceKrw",
+    header: "Price",
   },
 ];
