@@ -17,6 +17,8 @@ const Home = async () => {
       vendorKey: coffeeLibreVendor.key,
     })) ?? [];
 
+  console.log("mock", mockData);
+
   return (
     <div className="w-full p-3">
       <div className="p-2 flex flex-col gap-1">
