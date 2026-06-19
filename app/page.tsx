@@ -1,28 +1,24 @@
 import { apiGetGreenbeanData } from "@/utils/greenbean/utils";
 import { DataTable } from "./dataTable";
 import { columns } from "./colums";
-import { DataTablePagination } from "./DataTablePagination";
 
 const Home = async () => {
-  const getGreenbeanData = await apiGetGreenbeanData();
+  const greenbeanData = await apiGetGreenbeanData();
 
-  const coffeeLibreVendor = getGreenbeanData.vendors.find(
-    (vendor: { name: string }) => vendor.name === "커피리브레",
+  const data = greenbeanData.vendors.flatMap((vendor: any) =>
+    vendor.products.map((product: any) => ({
+      ...product,
+      vendorName: vendor.name,
+      vendorKey: vendor.key,
+    })),
   );
 
-  const mockData =
-    coffeeLibreVendor?.products.map((product: any) => ({
-      ...product,
-      vendorName: coffeeLibreVendor.name,
-      vendorKey: coffeeLibreVendor.key,
-    })) ?? [];
-
-  console.log("mock", mockData);
+  console.log("green", data);
 
   return (
     <div className="w-full p-3">
       <div className="p-2 flex flex-col gap-1">
-        <DataTable columns={columns} data={mockData} />
+        <DataTable columns={columns} data={data} />
       </div>
     </div>
   );
