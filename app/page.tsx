@@ -18,7 +18,7 @@ const Home = async () => {
   return (
     <div className="w-full p-3">
       <div className="p-2 flex flex-col gap-1">
-        <DataTable columns={columns} data={data} />
+        <DataTable columns={columns} data={data} originData={greenbeanData} />
       </div>
     </div>
   );

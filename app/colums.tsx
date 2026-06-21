@@ -11,6 +11,7 @@ export type GreenBean = {
   unit: string;
   priceKrw: number;
   productUrl: string;
+  origin: string;
 };
 
 export const columns: ColumnDef<GreenBean>[] = [
@@ -23,6 +24,20 @@ export const columns: ColumnDef<GreenBean>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
           Vendor
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      );
+    },
+  },
+  {
+    accessorKey: "origin",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Origin
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );

@@ -19,7 +19,6 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
-import { DataTablePagination } from "./DataTablePagination";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -30,20 +29,33 @@ import {
 } from "@/components/ui/select";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Field,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+} from "@/components/ui/field";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  originData: {
+    vendors: [];
+  };
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  originData,
 }: DataTableProps<TData, TValue>) {
   // 정렬
   const [sorting, setSorting] = useState<SortingState>([]);
   // 필터
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+  // 체크
+  const [checked, setChecked] = useState<boolean>(false);
 
   const table = useReactTable({
     data,
@@ -66,6 +78,13 @@ export function DataTable<TData, TValue>({
     },
   });
 
+  // 판매사 리스트
+  const vendros = originData.vendors.map(
+    (vendor: { name: string }) => vendor.name,
+  );
+
+  console.log("test", originData);
+
   return (
     <>
       <div className="flex items-center py-4">
@@ -77,6 +96,46 @@ export function DataTable<TData, TValue>({
           }
           className="max-w-sm"
         />
+        <FieldGroup className="mx-auto w-56">
+          <FieldLegend>판매사</FieldLegend>
+          {vendros.map((vendor) => (
+            <Field orientation="horizontal" key={vendor}>
+              <Checkbox
+                id={vendor}
+                checked={
+                  table.getColumn("vendorName")?.getFilterValue() === vendor
+                }
+                onCheckedChange={(checked) => {
+                  table
+                    .getColumn("vendorName")
+                    ?.setFilterValue(checked ? vendor : undefined);
+                }}
+              />
+
+              <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
+            </Field>
+          ))}
+        </FieldGroup>
+        <FieldGroup className="mx-auto w-56">
+          <FieldLegend>국가</FieldLegend>
+          {vendros.map((vendor) => (
+            <Field orientation="horizontal" key={vendor}>
+              <Checkbox
+                id={vendor}
+                checked={
+                  table.getColumn("vendorName")?.getFilterValue() === vendor
+                }
+                onCheckedChange={(checked) => {
+                  table
+                    .getColumn("vendorName")
+                    ?.setFilterValue(checked ? vendor : undefined);
+                }}
+              />
+
+              <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
+            </Field>
+          ))}
+        </FieldGroup>
       </div>
       <div className="flex items-center space-x-2">
         <p className="text-sm font-medium">Rows per page</p>
