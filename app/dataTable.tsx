@@ -36,6 +36,7 @@ import {
   FieldLabel,
   FieldLegend,
 } from "@/components/ui/field";
+import { ORIGIN_LIST } from "@/constants/originList";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -54,8 +55,6 @@ export function DataTable<TData, TValue>({
   const [sorting, setSorting] = useState<SortingState>([]);
   // 필터
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  // 체크
-  const [checked, setChecked] = useState<boolean>(false);
 
   const table = useReactTable({
     data,
@@ -82,8 +81,6 @@ export function DataTable<TData, TValue>({
   const vendros = originData.vendors.map(
     (vendor: { name: string }) => vendor.name,
   );
-
-  console.log("test", originData);
 
   return (
     <>
@@ -118,21 +115,24 @@ export function DataTable<TData, TValue>({
         </FieldGroup>
         <FieldGroup className="mx-auto w-56">
           <FieldLegend>국가</FieldLegend>
-          {vendros.map((vendor) => (
-            <Field orientation="horizontal" key={vendor}>
+          {ORIGIN_LIST.map((origin) => (
+            <Field orientation="horizontal" key={origin.originKey}>
               <Checkbox
-                id={vendor}
+                id={origin.originKey}
                 checked={
-                  table.getColumn("vendorName")?.getFilterValue() === vendor
+                  table.getColumn("origin")?.getFilterValue() ===
+                  origin.originName
                 }
                 onCheckedChange={(checked) => {
                   table
-                    .getColumn("vendorName")
-                    ?.setFilterValue(checked ? vendor : undefined);
+                    .getColumn("origin")
+                    ?.setFilterValue(checked ? origin.originName : undefined);
                 }}
               />
 
-              <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
+              <FieldLabel htmlFor={origin.originKey}>
+                {origin.originName}
+              </FieldLabel>
             </Field>
           ))}
         </FieldGroup>
