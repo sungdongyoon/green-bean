@@ -27,7 +27,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -38,7 +38,8 @@ import {
 } from "@/components/ui/field";
 import { ORIGIN_LIST } from "@/constants/originList";
 import { FaMapLocation, FaShop } from "react-icons/fa6";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import TablePagination from "@/components/common/TablePagination";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -96,6 +97,7 @@ export function DataTable<TData, TValue>({
     a.originName.toLowerCase() < b.originName.toLowerCase() ? -1 : 1,
   );
 
+  // 검색 키워드 동작
   useEffect(() => {
     table.getColumn("name")?.setFilterValue(keyword || undefined);
   }, [keyword, table]);
@@ -104,15 +106,6 @@ export function DataTable<TData, TValue>({
     <>
       <div className="flex items-center justify-between">
         <h1 className="text-[1.4rem] font-semibold">생두 상세검색</h1>
-        {/* <Input
-          id="search"
-          placeholder="생두명을 입력해주세요."
-          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
-          onChange={(event) =>
-            table.getColumn("name")?.setFilterValue(event.target.value)
-          }
-          className="max-w-[500px] w-full min-w-[200px] bg-white"
-        /> */}
       </div>
       <div className="grid grid-cols-4 gap-3 py-4">
         <FieldGroup className="bg-white border border-gray-200 p-3 rounded-md">
@@ -260,28 +253,8 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
       <div className="flex items-center justify-center space-x-2 py-4">
-        <div className="flex w-[100px] items-center justify-center text-sm font-medium">
-          Page {table.getState().pagination.pageIndex + 1} of{" "}
-          {table.getPageCount()}
-        </div>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          이전
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          다음
-        </Button>
+        <TablePagination table={table} />
       </div>
-      {/* <DataTablePagination table={table} /> */}
     </>
   );
 }
