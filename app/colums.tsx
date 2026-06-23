@@ -29,6 +29,13 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    filterFn: (row, columnId, filterValue: string[]) => {
+      if (!filterValue?.length) return true;
+
+      const value = row.getValue(columnId) as string;
+      return filterValue.includes(value);
+    },
+    size: 100,
   },
   {
     accessorKey: "origin",
@@ -44,6 +51,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    size: 100,
   },
   {
     accessorKey: "name",
@@ -59,6 +67,10 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    cell: ({ row }) => {
+      return <p className="font-semibold truncate">{row.original.name}</p>;
+    },
+    size: 400,
   },
   {
     accessorKey: "unit",
@@ -74,6 +86,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    size: 100,
   },
   {
     accessorKey: "priceKrw",
@@ -92,8 +105,13 @@ export const columns: ColumnDef<GreenBean>[] = [
     cell: ({ row }) => {
       const price = row.original.priceKrw;
 
-      return price ? `${price.toLocaleString()}원` : "-";
+      return (
+        <p className="font-semibold">
+          {price ? `${price.toLocaleString()}원` : "-"}
+        </p>
+      );
     },
+    size: 100,
   },
   {
     accessorKey: "productUrl",
@@ -117,5 +135,6 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    size: 100,
   },
 ];

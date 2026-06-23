@@ -27,7 +27,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -38,6 +38,7 @@ import {
 } from "@/components/ui/field";
 import { ORIGIN_LIST } from "@/constants/originList";
 import { FaMapLocation, FaShop } from "react-icons/fa6";
+import { usePathname, useSearchParams } from "next/navigation";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -56,6 +57,10 @@ export function DataTable<TData, TValue>({
   const [sorting, setSorting] = useState<SortingState>([]);
   // 필터
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+
+  // 헤더 검색 input값
+  const params = useSearchParams();
+  const keyword = params.get("keyword") ?? "";
 
   const table = useReactTable({
     data,
@@ -83,16 +88,23 @@ export function DataTable<TData, TValue>({
     .map((vendor: { name: string }) => vendor.name)
     .sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1));
 
+  const selectedVendors =
+    (table.getColumn("vendorName")?.getFilterValue() as string[]) ?? [];
+
   // 국가 리스트 정렬(오름차순)
   const sortedOriginList = [...ORIGIN_LIST].sort((a, b) =>
     a.originName.toLowerCase() < b.originName.toLowerCase() ? -1 : 1,
   );
 
+  useEffect(() => {
+    table.getColumn("name")?.setFilterValue(keyword || undefined);
+  }, [keyword, table]);
+
   return (
     <>
       <div className="flex items-center justify-between">
         <h1 className="text-[1.4rem] font-semibold">생두 상세검색</h1>
-        <Input
+        {/* <Input
           id="search"
           placeholder="생두명을 입력해주세요."
           value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
@@ -100,13 +112,13 @@ export function DataTable<TData, TValue>({
             table.getColumn("name")?.setFilterValue(event.target.value)
           }
           className="max-w-[500px] w-full min-w-[200px] bg-white"
-        />
+        /> */}
       </div>
       <div className="grid grid-cols-4 gap-3 py-4">
         <FieldGroup className="bg-white border border-gray-200 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
-              <FaShop />
+              <FaShop className="text-accent" />
             </Button>
             판매사
           </FieldLegend>
@@ -115,17 +127,25 @@ export function DataTable<TData, TValue>({
               <Field orientation="horizontal" key={vendor}>
                 <Checkbox
                   id={vendor}
-                  checked={
-                    table.getColumn("vendorName")?.getFilterValue() === vendor
-                  }
+                  checked={(
+                    (table
+                      .getColumn("vendorName")
+                      ?.getFilterValue() as string[]) ?? []
+                  ).includes(vendor)}
                   onCheckedChange={(checked) => {
+                    const next = checked
+                      ? [...selectedVendors, vendor]
+                      : selectedVendors.filter((v) => v !== vendor);
+
                     table
                       .getColumn("vendorName")
-                      ?.setFilterValue(checked ? vendor : undefined);
+                      ?.setFilterValue(next.length ? next : undefined);
                   }}
                   className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
-                <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
+                <FieldLabel htmlFor={vendor} className="text-[0.8rem]">
+                  {vendor}
+                </FieldLabel>
               </Field>
             ))}
           </div>
@@ -133,7 +153,7 @@ export function DataTable<TData, TValue>({
         <FieldGroup className="col-span-3 bg-white border border-gray-200 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
-              <FaMapLocation />
+              <FaMapLocation className="text-accent" />
             </Button>
             국가
           </FieldLegend>
@@ -154,7 +174,10 @@ export function DataTable<TData, TValue>({
                   className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
 
-                <FieldLabel htmlFor={origin.originKey}>
+                <FieldLabel
+                  htmlFor={origin.originKey}
+                  className="text-[0.8rem]"
+                >
                   {origin.originName}
                 </FieldLabel>
               </Field>
@@ -183,13 +206,16 @@ export function DataTable<TData, TValue>({
         </Select>
       </div>
       <div className="overflow-hidden rounded-md border">
-        <Table className="bg-white">
+        <Table className="bg-white table-fixed w-full">
           <TableHeader className="bg-gray-100">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id} className="hover:bg-muted/0">
                 {headerGroup.headers.map((header) => {
                   return (
-                    <TableHead key={header.id}>
+                    <TableHead
+                      key={header.id}
+                      style={{ width: header.getSize() }}
+                    >
                       {header.isPlaceholder
                         ? null
                         : flexRender(
@@ -211,7 +237,7 @@ export function DataTable<TData, TValue>({
                   className="hover:bg-muted/0"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell key={cell.id} className="text-[0.8rem]">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext(),
