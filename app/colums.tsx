@@ -22,6 +22,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Vendor
           <ArrowUpDown className="ml-2 h-4 w-4" />
@@ -36,6 +37,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Origin
           <ArrowUpDown className="ml-2 h-4 w-4" />
@@ -50,6 +52,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Name
           <ArrowUpDown className="ml-2 h-4 w-4" />
@@ -64,6 +67,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Unit
           <ArrowUpDown className="ml-2 h-4 w-4" />
@@ -78,6 +82,7 @@ export const columns: ColumnDef<GreenBean>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Price
           <ArrowUpDown className="ml-2 h-4 w-4" />
@@ -99,7 +104,12 @@ export const columns: ColumnDef<GreenBean>[] = [
       if (!url) return "-";
 
       return (
-        <Button asChild size="sm" variant="outline">
+        <Button
+          asChild
+          size="sm"
+          variant="outline"
+          className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
+        >
           <a href={url} target="_blank">
             구매
             <ExternalLink className="ml-1 size-3" />

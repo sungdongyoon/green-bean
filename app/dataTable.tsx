@@ -37,6 +37,7 @@ import {
   FieldLegend,
 } from "@/components/ui/field";
 import { ORIGIN_LIST } from "@/constants/originList";
+import { FaMapLocation, FaShop } from "react-icons/fa6";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -77,67 +78,91 @@ export function DataTable<TData, TValue>({
     },
   });
 
-  // 판매사 리스트
-  const vendros = originData.vendors.map(
-    (vendor: { name: string }) => vendor.name,
+  // 판매사 리스트(오름차순))
+  const vendors = originData.vendors
+    .map((vendor: { name: string }) => vendor.name)
+    .sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1));
+
+  // 국가 리스트 정렬(오름차순)
+  const sortedOriginList = [...ORIGIN_LIST].sort((a, b) =>
+    a.originName.toLowerCase() < b.originName.toLowerCase() ? -1 : 1,
   );
 
   return (
     <>
-      <div className="flex items-center py-4">
+      <div className="flex items-center justify-between">
+        <h1 className="text-[1.4rem] font-semibold">생두 상세검색</h1>
         <Input
-          placeholder="원두명을 입력해주세요."
+          id="search"
+          placeholder="생두명을 입력해주세요."
           value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("name")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="max-w-[500px] w-full min-w-[200px] bg-white"
         />
-        <FieldGroup className="mx-auto w-56">
-          <FieldLegend>판매사</FieldLegend>
-          {vendros.map((vendor) => (
-            <Field orientation="horizontal" key={vendor}>
-              <Checkbox
-                id={vendor}
-                checked={
-                  table.getColumn("vendorName")?.getFilterValue() === vendor
-                }
-                onCheckedChange={(checked) => {
-                  table
-                    .getColumn("vendorName")
-                    ?.setFilterValue(checked ? vendor : undefined);
-                }}
-              />
-
-              <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
-            </Field>
-          ))}
+      </div>
+      <div className="grid grid-cols-4 gap-3 py-4">
+        <FieldGroup className="bg-white border border-gray-200 p-3 rounded-md">
+          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
+            <Button size="icon-xs" variant="outline">
+              <FaShop />
+            </Button>
+            판매사
+          </FieldLegend>
+          <div className="grid grid-cols-2 gap-3">
+            {vendors.map((vendor) => (
+              <Field orientation="horizontal" key={vendor}>
+                <Checkbox
+                  id={vendor}
+                  checked={
+                    table.getColumn("vendorName")?.getFilterValue() === vendor
+                  }
+                  onCheckedChange={(checked) => {
+                    table
+                      .getColumn("vendorName")
+                      ?.setFilterValue(checked ? vendor : undefined);
+                  }}
+                  className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+                />
+                <FieldLabel htmlFor={vendor}>{vendor}</FieldLabel>
+              </Field>
+            ))}
+          </div>
         </FieldGroup>
-        <FieldGroup className="mx-auto w-56">
-          <FieldLegend>국가</FieldLegend>
-          {ORIGIN_LIST.map((origin) => (
-            <Field orientation="horizontal" key={origin.originKey}>
-              <Checkbox
-                id={origin.originKey}
-                checked={
-                  table.getColumn("origin")?.getFilterValue() ===
-                  origin.originName
-                }
-                onCheckedChange={(checked) => {
-                  table
-                    .getColumn("origin")
-                    ?.setFilterValue(checked ? origin.originName : undefined);
-                }}
-              />
+        <FieldGroup className="col-span-3 bg-white border border-gray-200 p-3 rounded-md">
+          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
+            <Button size="icon-xs" variant="outline">
+              <FaMapLocation />
+            </Button>
+            국가
+          </FieldLegend>
+          <div className="grid grid-cols-7 gap-3">
+            {sortedOriginList.map((origin) => (
+              <Field orientation="horizontal" key={origin.originKey}>
+                <Checkbox
+                  id={origin.originKey}
+                  checked={
+                    table.getColumn("origin")?.getFilterValue() ===
+                    origin.originName
+                  }
+                  onCheckedChange={(checked) => {
+                    table
+                      .getColumn("origin")
+                      ?.setFilterValue(checked ? origin.originName : undefined);
+                  }}
+                  className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+                />
 
-              <FieldLabel htmlFor={origin.originKey}>
-                {origin.originName}
-              </FieldLabel>
-            </Field>
-          ))}
+                <FieldLabel htmlFor={origin.originKey}>
+                  {origin.originName}
+                </FieldLabel>
+              </Field>
+            ))}
+          </div>
         </FieldGroup>
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 mb-3">
         <p className="text-sm font-medium">Rows per page</p>
         <Select
           value={`${table.getState().pagination.pageSize}`}
@@ -145,7 +170,7 @@ export function DataTable<TData, TValue>({
             table.setPageSize(Number(value));
           }}
         >
-          <SelectTrigger className="h-8 w-[70px]">
+          <SelectTrigger className="h-8 w-[70px] bg-white">
             <SelectValue placeholder={table.getState().pagination.pageSize} />
           </SelectTrigger>
           <SelectContent side="top">
@@ -158,10 +183,10 @@ export function DataTable<TData, TValue>({
         </Select>
       </div>
       <div className="overflow-hidden rounded-md border">
-        <Table>
-          <TableHeader>
+        <Table className="bg-white">
+          <TableHeader className="bg-gray-100">
             {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
+              <TableRow key={headerGroup.id} className="hover:bg-muted/0">
                 {headerGroup.headers.map((header) => {
                   return (
                     <TableHead key={header.id}>
@@ -183,6 +208,7 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
+                  className="hover:bg-muted/0"
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>

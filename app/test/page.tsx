@@ -11,7 +11,6 @@ const page = () => {
       axios.get("/green-bean-vendors.json").then((res) => res.data),
   });
 
-  console.log("data", data);
   return <div></div>;
 };
 

@@ -13,11 +13,9 @@ const Home = async () => {
     })),
   );
 
-  console.log("green", data);
-
   return (
-    <div className="w-full p-3">
-      <div className="p-2 flex flex-col gap-1">
+    <div className="w-full flex justify-center p-3">
+      <div className="max-w-7xl w-full flex flex-col justify-center">
         <DataTable columns={columns} data={data} originData={greenbeanData} />
       </div>
     </div>

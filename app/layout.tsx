@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-white">
         <QueryProvider>
           <SidebarProvider>
             <TooltipProvider>

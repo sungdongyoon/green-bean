@@ -56,7 +56,7 @@ const AppSidebar = () => {
           </SidebarMenuItem>
           <SidebarMenuItem className="p-2">
             <Field>
-              <FieldLabel htmlFor="search-bean">업체</FieldLabel>
+              <FieldLabel htmlFor="vendors">업체</FieldLabel>
               <FieldSet>
                 <FieldGroup className="grid grid-cols-2 gap-3">
                   <Field orientation="horizontal">
@@ -81,24 +81,24 @@ const AppSidebar = () => {
           </SidebarMenuItem>
           <SidebarMenuItem className="p-2">
             <Field>
-              <FieldLabel htmlFor="search-bean">국가</FieldLabel>
+              <FieldLabel htmlFor="origin">국가</FieldLabel>
               <FieldSet>
                 <FieldGroup className="grid grid-cols-2 gap-3">
                   <Field orientation="horizontal">
-                    <Checkbox id="ethiopia" name="ethiopia" />
-                    <FieldLabel htmlFor="ethiophia">에티오피아</FieldLabel>
+                    <Checkbox id="ethiopia2" name="ethiopia2" />
+                    <FieldLabel htmlFor="ethiopia2">에티오피아</FieldLabel>
                   </Field>
                   <Field orientation="horizontal">
-                    <Checkbox id="colombia" name="colombia" />
-                    <FieldLabel htmlFor="colombia">콜롬비아</FieldLabel>
+                    <Checkbox id="colombia2" name="colombia2" />
+                    <FieldLabel htmlFor="colombia2">콜롬비아</FieldLabel>
                   </Field>
                   <Field orientation="horizontal">
-                    <Checkbox id="brazil" name="brazil" />
-                    <FieldLabel htmlFor="brazil">브라질</FieldLabel>
+                    <Checkbox id="brazil2" name="brazil2" />
+                    <FieldLabel htmlFor="brazil2">브라질</FieldLabel>
                   </Field>
                   <Field orientation="horizontal">
-                    <Checkbox id="kenya" name="kenya" />
-                    <FieldLabel htmlFor="kenya">케냐</FieldLabel>
+                    <Checkbox id="kenya2" name="kenya2" />
+                    <FieldLabel htmlFor="kenya2">케냐</FieldLabel>
                   </Field>
                 </FieldGroup>
               </FieldSet>
