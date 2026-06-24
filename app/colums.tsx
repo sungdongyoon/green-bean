@@ -51,6 +51,12 @@ export const columns: ColumnDef<GreenBean>[] = [
         </Button>
       );
     },
+    filterFn: (row, columnId, filterValue: string[]) => {
+      if (!filterValue?.length) return true;
+
+      const value = row.getValue(columnId) as string;
+      return filterValue.includes(value);
+    },
     size: 100,
   },
   {

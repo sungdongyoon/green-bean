@@ -97,6 +97,11 @@ export function DataTable<TData, TValue>({
     a.originName.toLowerCase() < b.originName.toLowerCase() ? -1 : 1,
   );
 
+  const selectedOrigin =
+    (table.getColumn("origin")?.getFilterValue() as string[]) ?? [];
+
+  console.log("origin", selectedOrigin);
+
   // 검색 키워드 동작
   useEffect(() => {
     table.getColumn("name")?.setFilterValue(keyword || undefined);
@@ -156,13 +161,22 @@ export function DataTable<TData, TValue>({
                 <Checkbox
                   id={origin.originKey}
                   checked={
-                    table.getColumn("origin")?.getFilterValue() ===
-                    origin.originName
+                    (
+                      (table
+                        .getColumn("origin")
+                        ?.getFilterValue() as string[]) ?? []
+                    ).includes(origin.originName)
+                    // table.getColumn("origin")?.getFilterValue() ===
+                    // origin.originName
                   }
                   onCheckedChange={(checked) => {
+                    const next = checked
+                      ? [...selectedOrigin, origin.originName]
+                      : selectedOrigin.filter((v) => v !== origin.originName);
+
                     table
                       .getColumn("origin")
-                      ?.setFilterValue(checked ? origin.originName : undefined);
+                      ?.setFilterValue(next.length ? next : undefined);
                   }}
                   className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
