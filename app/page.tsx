@@ -1,4 +1,3 @@
-import { apiGetGreenbeanData } from "@/utils/greenbean/utils";
 import greenbeanData from "@/public/data/green-bean-vendors.json";
 import { DataTable } from "./dataTable";
 import { columns } from "./colums";
