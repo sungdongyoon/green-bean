@@ -40,6 +40,7 @@ import { ORIGIN_LIST } from "@/constants/originList";
 import { FaMapLocation, FaShop } from "react-icons/fa6";
 import { useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
+import HeaderSearch from "@/components/common/HeaderSearch";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -112,7 +113,25 @@ export function DataTable<TData, TValue>({
       <div className="flex items-center justify-between">
         <h1 className="text-[1.4rem] font-semibold">생두 상세검색</h1>
       </div>
-      <div className="grid grid-cols-4 gap-3 py-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 my-4">
+        <FieldGroup className="flex md:hidden bg-white border border-gray-200 p-3 rounded-md pb-5 md:pb-3">
+          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
+            <Button size="icon-xs" variant="outline">
+              <FaShop className="text-accent" />
+            </Button>
+            생두 검색
+          </FieldLegend>
+          <HeaderSearch className="w-full" />
+          {/* <Input
+            id="search"
+            placeholder="생두명을 입력해주세요."
+            value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
+            onChange={(event) =>
+              table.getColumn("name")?.setFilterValue(event.target.value)
+            }
+            className="w-full bg-white"
+          /> */}
+        </FieldGroup>
         <FieldGroup className="bg-white border border-gray-200 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
@@ -120,7 +139,7 @@ export function DataTable<TData, TValue>({
             </Button>
             판매사
           </FieldLegend>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-3">
             {vendors.map((vendor) => (
               <Field orientation="horizontal" key={vendor}>
                 <Checkbox
@@ -148,14 +167,14 @@ export function DataTable<TData, TValue>({
             ))}
           </div>
         </FieldGroup>
-        <FieldGroup className="col-span-3 bg-white border border-gray-200 p-3 rounded-md">
+        <FieldGroup className="lg:col-span-3 bg-white border border-gray-200 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
               <FaMapLocation className="text-accent" />
             </Button>
             국가
           </FieldLegend>
-          <div className="grid grid-cols-7 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3">
             {sortedOriginList.map((origin) => (
               <Field orientation="horizontal" key={origin.originKey}>
                 <Checkbox

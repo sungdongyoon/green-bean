@@ -19,15 +19,20 @@ export const columns: ColumnDef<GreenBean>[] = [
     accessorKey: "vendorName",
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
-        >
-          Vendor
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+        <div className="text-center">
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+          >
+            Vendor
+            <ArrowUpDown className="h-4 w-4" />
+          </Button>
+        </div>
       );
+    },
+    cell: ({ row }) => {
+      return <p className="text-center truncate">{row.original.vendorName}</p>;
     },
     filterFn: (row, columnId, filterValue: string[]) => {
       if (!filterValue?.length) return true;
@@ -41,15 +46,20 @@ export const columns: ColumnDef<GreenBean>[] = [
     accessorKey: "origin",
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
-        >
-          Origin
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+        <div className="text-center">
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+          >
+            Origin
+            <ArrowUpDown className="h-4 w-4" />
+          </Button>
+        </div>
       );
+    },
+    cell: ({ row }) => {
+      return <p className="text-center truncate">{row.original.origin}</p>;
     },
     filterFn: (row, columnId, filterValue: string[]) => {
       if (!filterValue?.length) return true;
@@ -69,7 +79,7 @@ export const columns: ColumnDef<GreenBean>[] = [
           className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
           Name
-          <ArrowUpDown className="ml-2 h-4 w-4" />
+          <ArrowUpDown className="h-4 w-4" />
         </Button>
       );
     },
@@ -82,15 +92,20 @@ export const columns: ColumnDef<GreenBean>[] = [
     accessorKey: "unit",
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
-        >
-          Unit
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+        <div className="text-center">
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+          >
+            Unit
+            <ArrowUpDown className="h-4 w-4" />
+          </Button>
+        </div>
       );
+    },
+    cell: ({ row }) => {
+      return <p className="text-center truncate">{row.original.unit}</p>;
     },
     size: 100,
   },
@@ -98,21 +113,23 @@ export const columns: ColumnDef<GreenBean>[] = [
     accessorKey: "priceKrw",
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
-        >
-          Price
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+        <div className="text-center">
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+          >
+            Price
+            <ArrowUpDown className="h-4 w-4" />
+          </Button>
+        </div>
       );
     },
     cell: ({ row }) => {
       const price = row.original.priceKrw;
 
       return (
-        <p className="font-semibold">
+        <p className="font-semibold text-center">
           {price ? `${price.toLocaleString()}원` : "-"}
         </p>
       );
@@ -121,26 +138,31 @@ export const columns: ColumnDef<GreenBean>[] = [
   },
   {
     accessorKey: "productUrl",
-    header: "Buy",
+    header: ({ column }) => {
+      return <p className="text-center">Buy</p>;
+    },
     cell: ({ row }) => {
       const url = row.original.productUrl;
 
       if (!url) return "-";
 
       return (
-        <Button
-          asChild
-          size="sm"
-          variant="outline"
-          className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
-        >
-          <a href={url} target="_blank">
-            구매
-            <ExternalLink className="ml-1 size-3" />
-          </a>
-        </Button>
+        <div className="text-center">
+          <Button
+            asChild
+            size="sm"
+            variant="outline"
+            className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
+          >
+            <a href={url} target="_blank">
+              구매
+              <ExternalLink className="ml-1 size-3" />
+            </a>
+          </Button>
+        </div>
       );
     },
+
     size: 100,
   },
 ];

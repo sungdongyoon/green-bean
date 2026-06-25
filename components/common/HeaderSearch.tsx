@@ -5,7 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 
-const HeaderSearch = () => {
+const HeaderSearch = ({ className }: { className: string }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -32,17 +32,14 @@ const HeaderSearch = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex w-full max-w-[500px] min-w-[400px] gap-1"
-    >
+    <form onSubmit={handleSubmit} className={`${className} flex gap-1`}>
       <Input
         id="search"
         type="search"
         placeholder="생두명을 입력해주세요."
         value={keyword}
         onChange={(event) => setKeyword(event.target.value)}
-        className="min-w-0 bg-white"
+        className="w-full min-w-0 bg-white"
       />
       <Button
         type="submit"

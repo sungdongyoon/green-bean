@@ -14,7 +14,7 @@ const Home = async () => {
   );
 
   return (
-    <div className="w-full flex justify-center p-3">
+    <div className="w-full flex justify-center p-6 md:p-12">
       <div className="max-w-7xl w-full flex flex-col justify-center">
         <DataTable columns={columns} data={data} originData={greenbeanData} />
       </div>

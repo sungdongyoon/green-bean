@@ -1,16 +1,22 @@
 import React from "react";
 import HeaderSearch from "./HeaderSearch";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="w-full bg-gray-200 flex justify-center">
-      <div className="w-full max-w-[90%] flex items-center justify-between py-5">
-        <p>Green Bean Market!</p>
-        <div className="flex shrink-0 items-center gap-3">
-          <HeaderSearch />
-          <p className="text-[0.6rem] whitespace-nowrap">
-            last updated : 2026.06.17 23:22:23
-          </p>
+    <header className="w-full bg-gray-100 flex justify-center">
+      <div className="w-full max-w-[90%] flex items-center justify-between py-7">
+        <div>
+          <Image
+            src="/image/logo-full.png"
+            alt="로고"
+            width={200}
+            height={50}
+            className="h-8 w-auto"
+          />
+        </div>
+        <div className="hidden md:flex shrink-0 gap-3">
+          <HeaderSearch className="w-[400px] lg:w-[500px]" />
         </div>
       </div>
     </header>

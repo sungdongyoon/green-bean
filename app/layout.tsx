@@ -26,11 +26,11 @@ export default function RootLayout({
         <QueryProvider>
           <SidebarProvider>
             <TooltipProvider>
-              <AppSidebar />
+              {/* <AppSidebar /> */}
               <div className="w-full min-h-screen flex flex-col">
                 <Header />
                 <main>
-                  <SidebarTrigger />
+                  {/* <SidebarTrigger /> */}
                   {children}
                 </main>
               </div>
