@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="w-full bg-gray-100 flex justify-center">
+    <header className="w-full bg-gray-50 border-b border-gray-200 flex justify-center">
       <div className="w-full max-w-[90%] flex items-center justify-between py-7">
         <div>
           <Image
