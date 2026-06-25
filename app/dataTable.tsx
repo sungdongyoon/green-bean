@@ -27,7 +27,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -121,7 +121,9 @@ export function DataTable<TData, TValue>({
             </Button>
             생두 검색
           </FieldLegend>
-          <HeaderSearch className="w-full" />
+          <Suspense fallback={null}>
+            <HeaderSearch className="w-full" />
+          </Suspense>
           {/* <Input
             id="search"
             placeholder="생두명을 입력해주세요."

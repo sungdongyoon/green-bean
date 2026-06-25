@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import HeaderSearch from "./HeaderSearch";
 import Image from "next/image";
 
@@ -16,7 +16,9 @@ const Header = () => {
           />
         </div>
         <div className="hidden md:flex shrink-0 gap-3">
-          <HeaderSearch className="w-[400px] lg:w-[500px]" />
+          <Suspense fallback={null}>
+            <HeaderSearch className="w-[400px] lg:w-[500px]" />
+          </Suspense>
         </div>
       </div>
     </header>
