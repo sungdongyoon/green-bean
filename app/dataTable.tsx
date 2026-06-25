@@ -121,9 +121,7 @@ export function DataTable<TData, TValue>({
             </Button>
             생두 검색
           </FieldLegend>
-          <Suspense fallback={null}>
-            <HeaderSearch className="w-full" />
-          </Suspense>
+          <HeaderSearch className="w-full" />
           {/* <Input
             id="search"
             placeholder="생두명을 입력해주세요."
