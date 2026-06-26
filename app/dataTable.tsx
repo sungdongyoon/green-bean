@@ -82,6 +82,9 @@ export function DataTable<TData, TValue>({
     state: {
       sorting,
       columnFilters,
+      columnVisibility: {
+        status: false,
+      },
     },
   });
 
@@ -100,8 +103,6 @@ export function DataTable<TData, TValue>({
 
   const selectedOrigin =
     (table.getColumn("origin")?.getFilterValue() as string[]) ?? [];
-
-  console.log("origin", selectedOrigin);
 
   // 검색 키워드 동작
   useEffect(() => {
@@ -211,25 +212,44 @@ export function DataTable<TData, TValue>({
           </div>
         </FieldGroup>
       </div>
-      <div className="flex items-center space-x-2 mb-3">
-        <p className="text-sm font-medium">Rows per page</p>
-        <Select
-          value={`${table.getState().pagination.pageSize}`}
-          onValueChange={(value) => {
-            table.setPageSize(Number(value));
-          }}
-        >
-          <SelectTrigger className="h-8 w-[70px] bg-white">
-            <SelectValue placeholder={table.getState().pagination.pageSize} />
-          </SelectTrigger>
-          <SelectContent side="top">
-            {[10, 20, 25, 30, 40, 50].map((pageSize) => (
-              <SelectItem key={pageSize} value={`${pageSize}`}>
-                {pageSize}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+      <div className="flex justify-between mb-3">
+        <div className="flex items-center space-x-2">
+          <p className="text-sm font-medium">Rows per page</p>
+          <Select
+            value={`${table.getState().pagination.pageSize}`}
+            onValueChange={(value) => {
+              table.setPageSize(Number(value));
+            }}
+          >
+            <SelectTrigger className="h-8 w-[70px] bg-white">
+              <SelectValue placeholder={table.getState().pagination.pageSize} />
+            </SelectTrigger>
+            <SelectContent side="top">
+              {[10, 20, 25, 30, 40, 50].map((pageSize) => (
+                <SelectItem key={pageSize} value={`${pageSize}`}>
+                  {pageSize}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Checkbox
+            id="status"
+            checked={
+              table.getColumn("status")?.getFilterValue() === "available"
+            }
+            onCheckedChange={(checked) => {
+              table
+                .getColumn("status")
+                ?.setFilterValue(checked ? "available" : undefined);
+            }}
+            className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+          />
+          <label htmlFor="status" className="text-xs font-medium">
+            판매 가능한 상품만 보기
+          </label>
+        </div>
       </div>
       <div className="overflow-hidden rounded-md border">
         <Table className="bg-white table-fixed w-full">

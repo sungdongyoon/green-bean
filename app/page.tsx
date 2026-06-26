@@ -14,8 +14,10 @@ const Home = async () => {
     })),
   );
 
+  console.log("data", greenbeanData);
+
   return (
-    <div className="w-full flex justify-center p-6 md:p-12">
+    <div className="w-full flex justify-center py-12 px-3">
       <div className="max-w-7xl w-full flex flex-col justify-center">
         <Suspense fallback={null}>
           <DataTable columns={columns} data={data} originData={greenbeanData} />

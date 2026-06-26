@@ -12,6 +12,7 @@ export type GreenBean = {
   priceKrw: number;
   productUrl: string;
   origin: string;
+  status: string;
 };
 
 export const columns: ColumnDef<GreenBean>[] = [
@@ -162,7 +163,16 @@ export const columns: ColumnDef<GreenBean>[] = [
         </div>
       );
     },
-
     size: 100,
+  },
+  {
+    accessorKey: "status",
+    header: "상태",
+    filterFn: (row, columnId, filterValue: string[]) => {
+      if (!filterValue?.length) return true;
+
+      const value = row.getValue(columnId) as string;
+      return filterValue.includes(value);
+    },
   },
 ];
