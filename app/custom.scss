@@ -1,0 +1,14 @@
+@import "./assets/reset.scss";
+
+.section {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

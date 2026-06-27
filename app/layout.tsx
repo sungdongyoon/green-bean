@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./custom.scss";
 import Header from "../components/common/Header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/common/AppSidebar";
 import QueryProvider from "@/provider/QueryProvider";
+
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
 
@@ -32,7 +34,7 @@ export default function RootLayout({
               {/* <AppSidebar /> */}
               <div className="w-full min-h-screen flex flex-col">
                 <Header />
-                <main>
+                <main className="w-full flex justify-center py-12 px-3">
                   {/* <SidebarTrigger /> */}
                   {children}
                 </main>

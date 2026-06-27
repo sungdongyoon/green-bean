@@ -112,7 +112,7 @@ export function DataTable<TData, TValue>({
   return (
     <>
       <div className="flex items-center justify-between">
-        <h1 className="text-[1.4rem] font-semibold">생두 상세검색</h1>
+        <h1 className="section-title">생두 상세검색</h1>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 my-4">
         <FieldGroup className="flex md:hidden bg-white border border-gray-200 p-3 rounded-md pb-5 md:pb-3">
