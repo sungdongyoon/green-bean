@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { DataTable } from "../components/home/DataTable";
 import { getColumns } from "./colums";
 
-const Home = async () => {
+const Home = () => {
   // const greenbeanData = await apiGetGreenbeanData();
 
   const data = greenbeanData.vendors.flatMap((vendor: any) =>
@@ -19,6 +19,7 @@ const Home = async () => {
 
   return (
     <section className="section">
+      <h1 className="section-title">생두 상세검색</h1>
       <Suspense fallback={null}>
         <DataTable
           columns={getColumns("favorite")}

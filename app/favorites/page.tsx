@@ -9,13 +9,23 @@ const page = () => {
   const [favoriteData, setFavoriteData] = useState<GreenBean[]>([]);
 
   useEffect(() => {
-    const getFavoriteData = localStorage.getItem("favorite-bean");
-    setFavoriteData(getFavoriteData ? JSON.parse(getFavoriteData) : []);
+    const syncFavoriteData = () => {
+      const getFavoriteData = localStorage.getItem("favorite-bean");
+      setFavoriteData(getFavoriteData ? JSON.parse(getFavoriteData) : []);
+    };
+
+    syncFavoriteData();
+
+    window.addEventListener("favorite-bean-change", syncFavoriteData);
+
+    return () => {
+      window.removeEventListener("favorite-bean-change", syncFavoriteData);
+    };
   }, []);
 
   return (
     <section className="section">
-      <h1 className="section-title">좋아요 페이지</h1>
+      <h1 className="section-title">찜한 생두 리스트</h1>
       <FavoriteTable data={favoriteData} columns={getColumns("delete")} />
     </section>
   );

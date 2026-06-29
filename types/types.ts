@@ -24,3 +24,6 @@ export type GreenBean = {
   origin: string;
   status: string;
 };
+
+// 데이터 테이블 columns action 타입
+export type ActionColumn = "favorite" | "delete";

@@ -18,6 +18,9 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import { Spinner } from "../ui/spinner";
+import { FaSpinner } from "react-icons/fa6";
+import { cn } from "@/lib/utils";
 
 interface FavoritesTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -51,6 +54,7 @@ export function FavoriteTable<TData, TValue>({
       },
     },
   });
+
   return (
     <div className="overflow-hidden rounded-md border">
       <Table className="bg-white table-fixed w-full">
@@ -92,8 +96,18 @@ export function FavoriteTable<TData, TValue>({
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={columns.length} className="h-24 text-center">
-                No results.
+              <TableCell
+                colSpan={columns.length - 1}
+                className="h-24 text-center"
+              >
+                <div className="flex justify-center items-center gap-3">
+                  <FaSpinner
+                    role="status"
+                    aria-label="loading"
+                    className={cn("size-4 animate-spin")}
+                  />
+                  <p>Loading...</p>
+                </div>
               </TableCell>
             </TableRow>
           )}

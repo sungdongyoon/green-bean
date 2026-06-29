@@ -110,11 +110,8 @@ export function DataTable<TData, TValue>({
   }, [keyword, table]);
 
   return (
-    <>
-      <div className="flex items-center justify-between">
-        <h1 className="section-title">생두 상세검색</h1>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 my-4">
+    <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
         <FieldGroup className="flex md:hidden bg-white border border-gray-200 p-3 rounded-md pb-5 md:pb-3">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
@@ -212,7 +209,7 @@ export function DataTable<TData, TValue>({
           </div>
         </FieldGroup>
       </div>
-      <div className="flex justify-between mb-3">
+      <div className="flex justify-between">
         <div className="flex items-center space-x-2">
           <p className="text-sm font-medium">Rows per page</p>
           <Select
@@ -295,7 +292,7 @@ export function DataTable<TData, TValue>({
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={columns.length}
+                  colSpan={columns.length - 1}
                   className="h-24 text-center"
                 >
                   No results.
@@ -308,6 +305,6 @@ export function DataTable<TData, TValue>({
       <div className="flex items-center justify-center space-x-2 py-4">
         <TablePagination table={table} />
       </div>
-    </>
+    </div>
   );
 }

@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/common/AppSidebar";
 import QueryProvider from "@/provider/QueryProvider";
+import { Toaster } from "sonner";
 
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
@@ -42,6 +43,7 @@ export default function RootLayout({
             </TooltipProvider>
           </SidebarProvider>
         </QueryProvider>
+        <Toaster />
       </body>
     </html>
   );

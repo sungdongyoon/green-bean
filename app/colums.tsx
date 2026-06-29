@@ -1,43 +1,20 @@
 "use client";
 
+import FavoriteDeleteButton from "@/components/favorites/FavoriteDeleteButton";
+import FavoriteButton from "@/components/home/FavoriteButton";
 import { Button } from "@/components/ui/button";
-import { GreenBean } from "@/types/types";
+import { ActionColumn, GreenBean } from "@/types/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, ExternalLink } from "lucide-react";
-import { FaHeart, FaTrash } from "react-icons/fa6";
 
-const FAVORITE_KEY = "favorite-bean";
-
-type ActionColumn = "favorite" | "delete";
-
-function getActionColumn(mode: ActionColumn): ColumnDef<GreenBean> {
-  if (mode === "delete") {
+// 액션 컬럼 함수(삭제, 찜하기 컬럼)
+function getActionColumn(col: ActionColumn): ColumnDef<GreenBean> {
+  if (col === "delete") {
     return {
       id: "delete",
       header: () => <p className="text-center">삭제</p>,
       cell: ({ row }) => {
-        const data = row.original;
-
-        return (
-          <button
-            type="button"
-            className="flex w-full justify-center cursor-pointer"
-            onClick={() => {
-              const store = localStorage.getItem(FAVORITE_KEY);
-              const basket: GreenBean[] = store ? JSON.parse(store) : [];
-
-              const nextBasket = basket.filter(
-                (item) => item.productNo !== data.productNo,
-              );
-
-              localStorage.setItem(FAVORITE_KEY, JSON.stringify(nextBasket));
-
-              window.dispatchEvent(new Event("favorite-bean-change"));
-            }}
-          >
-            <FaTrash className="size-4 text-red-500" />
-          </button>
-        );
+        return <FavoriteDeleteButton beanData={row.original} />;
       },
       size: 70,
     };
@@ -47,32 +24,7 @@ function getActionColumn(mode: ActionColumn): ColumnDef<GreenBean> {
     id: "favorite",
     header: () => <p className="text-center">찜하기</p>,
     cell: ({ row }) => {
-      const data = row.original;
-
-      return (
-        <button
-          type="button"
-          className="flex w-full justify-center cursor-pointer"
-          onClick={() => {
-            const store = localStorage.getItem(FAVORITE_KEY);
-            const basket: GreenBean[] = store ? JSON.parse(store) : [];
-
-            const isAlreadyFavorite = basket.some(
-              (item) => item.productNo === data.productNo,
-            );
-
-            if (isAlreadyFavorite) return;
-
-            const nextBasket = [...basket, data];
-
-            localStorage.setItem(FAVORITE_KEY, JSON.stringify(nextBasket));
-
-            window.dispatchEvent(new Event("favorite-bean-change"));
-          }}
-        >
-          <FaHeart className="text-[1rem]" />
-        </button>
-      );
+      return <FavoriteButton beanData={row.original} />;
     },
     size: 70,
   };
