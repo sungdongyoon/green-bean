@@ -1,3 +1,4 @@
+// 생두 국가 리스트
 export interface OriginList {
   originKey: string;
   originName: string;
@@ -10,3 +11,16 @@ export interface OriginList {
     | "caribbean"
     | "northAmerica";
 }
+
+// 생두 테이블 컬럼
+export type GreenBean = {
+  id: string;
+  vendorName: string;
+  name: string;
+  unit: string;
+  priceKrw: number;
+  productUrl: string;
+  productNo: string;
+  origin: string;
+  status: string;
+};

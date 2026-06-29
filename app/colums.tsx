@@ -1,25 +1,84 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { GreenBean } from "@/types/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, ExternalLink } from "lucide-react";
-import { FaHeart } from "react-icons/fa6";
-
-export type GreenBean = {
-  id: string;
-  vendorName: string;
-  name: string;
-  unit: string;
-  priceKrw: number;
-  productUrl: string;
-  productNo: string;
-  origin: string;
-  status: string;
-};
+import { FaHeart, FaTrash } from "react-icons/fa6";
 
 const FAVORITE_KEY = "favorite-bean";
 
-export const columns: ColumnDef<GreenBean>[] = [
+type ActionColumn = "favorite" | "delete";
+
+function getActionColumn(mode: ActionColumn): ColumnDef<GreenBean> {
+  if (mode === "delete") {
+    return {
+      id: "delete",
+      header: () => <p className="text-center">삭제</p>,
+      cell: ({ row }) => {
+        const data = row.original;
+
+        return (
+          <button
+            type="button"
+            className="flex w-full justify-center cursor-pointer"
+            onClick={() => {
+              const store = localStorage.getItem(FAVORITE_KEY);
+              const basket: GreenBean[] = store ? JSON.parse(store) : [];
+
+              const nextBasket = basket.filter(
+                (item) => item.productNo !== data.productNo,
+              );
+
+              localStorage.setItem(FAVORITE_KEY, JSON.stringify(nextBasket));
+
+              window.dispatchEvent(new Event("favorite-bean-change"));
+            }}
+          >
+            <FaTrash className="size-4 text-red-500" />
+          </button>
+        );
+      },
+      size: 70,
+    };
+  }
+
+  return {
+    id: "favorite",
+    header: () => <p className="text-center">찜하기</p>,
+    cell: ({ row }) => {
+      const data = row.original;
+
+      return (
+        <button
+          type="button"
+          className="flex w-full justify-center cursor-pointer"
+          onClick={() => {
+            const store = localStorage.getItem(FAVORITE_KEY);
+            const basket: GreenBean[] = store ? JSON.parse(store) : [];
+
+            const isAlreadyFavorite = basket.some(
+              (item) => item.productNo === data.productNo,
+            );
+
+            if (isAlreadyFavorite) return;
+
+            const nextBasket = [...basket, data];
+
+            localStorage.setItem(FAVORITE_KEY, JSON.stringify(nextBasket));
+
+            window.dispatchEvent(new Event("favorite-bean-change"));
+          }}
+        >
+          <FaHeart className="text-[1rem]" />
+        </button>
+      );
+    },
+    size: 70,
+  };
+}
+
+export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
   {
     accessorKey: "vendorName",
     header: ({ column }) => {
@@ -179,41 +238,5 @@ export const columns: ColumnDef<GreenBean>[] = [
       return filterValue.includes(value);
     },
   },
-  {
-    accessorKey: "favorite",
-    header: ({ column }) => {
-      return <p className="text-center">찜하기</p>;
-    },
-    cell: ({ row }) => {
-      const data = row.original;
-
-      return (
-        <div
-          className="text-center cursor-pointer"
-          onClick={() => {
-            // 로컬 스토리지에 저장된 값
-            const store = localStorage.getItem(FAVORITE_KEY);
-            const basket = store ? JSON.parse(store) : [];
-
-            // 중복 방지
-            if (
-              basket?.some(
-                (item: { productNo: string }) =>
-                  item.productNo === data.productNo,
-              )
-            ) {
-              return;
-            }
-
-            // 값 쌓아서 저장
-            const newItem = [...basket, data];
-            localStorage.setItem(FAVORITE_KEY, JSON.stringify(newItem));
-          }}
-        >
-          <FaHeart className="w-full text-[1rem]" />
-        </div>
-      );
-    },
-    size: 70,
-  },
+  getActionColumn(col),
 ];

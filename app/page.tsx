@@ -1,8 +1,10 @@
+"use client";
+
 import greenbeanData from "@/public/data/green-bean-vendors.json";
 
-import { columns } from "./colums";
 import { Suspense } from "react";
 import { DataTable } from "../components/home/DataTable";
+import { getColumns } from "./colums";
 
 const Home = async () => {
   // const greenbeanData = await apiGetGreenbeanData();
@@ -18,7 +20,11 @@ const Home = async () => {
   return (
     <section className="section">
       <Suspense fallback={null}>
-        <DataTable columns={columns} data={data} originData={greenbeanData} />
+        <DataTable
+          columns={getColumns("favorite")}
+          data={data}
+          originData={greenbeanData}
+        />
       </Suspense>
     </section>
   );
