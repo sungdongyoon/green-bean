@@ -27,8 +27,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import React, { Suspense, useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
+import React, { useEffect, useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Field,
@@ -88,7 +87,7 @@ export function DataTable<TData, TValue>({
     },
   });
 
-  // 판매사 리스트(오름차순))
+  // 판매사 리스트(오름차순)
   const vendors = originData.vendors
     .map((vendor: { name: string }) => vendor.name)
     .sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1));

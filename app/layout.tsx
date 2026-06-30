@@ -3,8 +3,7 @@ import "./globals.css";
 import "./custom.scss";
 import Header from "../components/common/Header";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import AppSidebar from "@/components/common/AppSidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import QueryProvider from "@/provider/QueryProvider";
 import { Toaster } from "sonner";
 

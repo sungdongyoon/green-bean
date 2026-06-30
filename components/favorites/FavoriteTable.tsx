@@ -18,9 +18,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { Spinner } from "../ui/spinner";
-import { FaSpinner } from "react-icons/fa6";
-import { cn } from "@/lib/utils";
+import Loading from "../common/Loading";
 
 interface FavoritesTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -42,13 +40,9 @@ export function FavoriteTable<TData, TValue>({
         pageSize: 10,
       },
     },
-    // onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
-    // onColumnFiltersChange: setColumnFilters,
     getFilteredRowModel: getFilteredRowModel(),
     state: {
-      // sorting,
-      // columnFilters,
       columnVisibility: {
         status: false,
       },
@@ -100,14 +94,7 @@ export function FavoriteTable<TData, TValue>({
                 colSpan={columns.length - 1}
                 className="h-24 text-center"
               >
-                <div className="flex justify-center items-center gap-3">
-                  <FaSpinner
-                    role="status"
-                    aria-label="loading"
-                    className={cn("size-4 animate-spin")}
-                  />
-                  <p>Loading...</p>
-                </div>
+                <Loading />
               </TableCell>
             </TableRow>
           )}

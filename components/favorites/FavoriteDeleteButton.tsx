@@ -1,7 +1,6 @@
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { GreenBean } from "@/types/types";
-import React from "react";
-import { FaTrash } from "react-icons/fa6";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 const FavoriteDeleteButton = ({ beanData }: { beanData: GreenBean }) => {
   return (
@@ -23,7 +22,7 @@ const FavoriteDeleteButton = ({ beanData }: { beanData: GreenBean }) => {
         }
       }}
     >
-      <FaTrash className="size-4 text-red-500" />
+      <FaRegTrashAlt className="size-4" />
     </button>
   );
 };
