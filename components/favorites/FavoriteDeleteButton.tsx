@@ -1,6 +1,7 @@
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { GreenBean } from "@/types/types";
 import { FaRegTrashAlt } from "react-icons/fa";
+import { toast } from "sonner";
 
 const FavoriteDeleteButton = ({ beanData }: { beanData: GreenBean }) => {
   return (
@@ -19,6 +20,9 @@ const FavoriteDeleteButton = ({ beanData }: { beanData: GreenBean }) => {
           localStorage.setItem(FAVORITE_KEY, JSON.stringify(nextBasket));
 
           window.dispatchEvent(new Event("favorite-bean-change"));
+          toast.success("삭제되었습니다.", {
+            position: "top-center",
+          });
         }
       }}
     >

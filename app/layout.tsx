@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import QueryProvider from "@/provider/QueryProvider";
 import { Toaster } from "sonner";
+import { pretendard_medium } from "@/font/localFont";
 
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="min-h-screen bg-white">
+      <body className={pretendard_medium.className}>
         <QueryProvider>
           <SidebarProvider>
             <TooltipProvider>

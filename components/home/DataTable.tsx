@@ -210,7 +210,7 @@ export function DataTable<TData, TValue>({
       </div>
       <div className="flex justify-between">
         <div className="flex items-center space-x-2">
-          <p className="text-sm font-medium">Rows per page</p>
+          <p className="text-sm font-regular">Rows per page</p>
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value) => {

@@ -13,7 +13,7 @@ const page = () => {
 
   const handleBulkDelete = () => {
     if (favoriteData.length === 0) {
-      toast.success("삭제할 생두 정보가 없습니다.", {
+      toast.info("삭제할 생두 정보가 없습니다.", {
         position: "top-center",
       });
       return;
