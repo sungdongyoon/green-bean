@@ -7,6 +7,8 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import QueryProvider from "@/provider/QueryProvider";
 import { Toaster } from "sonner";
 import { pretendard_medium } from "@/font/localFont";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
@@ -21,28 +23,33 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <html lang="ko">
       <body className={pretendard_medium.className}>
-        <QueryProvider>
-          <SidebarProvider>
-            <TooltipProvider>
-              {/* <AppSidebar /> */}
-              <div className="w-full min-h-screen flex flex-col">
-                <Header />
-                <main className="w-full flex justify-center py-12 px-3">
-                  {/* <SidebarTrigger /> */}
-                  {children}
-                </main>
-              </div>
-            </TooltipProvider>
-          </SidebarProvider>
-        </QueryProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <QueryProvider>
+            <SidebarProvider>
+              <TooltipProvider>
+                {/* <AppSidebar /> */}
+                <div className="w-full min-h-screen flex flex-col">
+                  <Header />
+                  <main className="w-full flex justify-center py-12 px-3">
+                    {/* <SidebarTrigger /> */}
+                    {children}
+                  </main>
+                </div>
+              </TooltipProvider>
+            </SidebarProvider>
+          </QueryProvider>
+        </NextIntlClientProvider>
         <Toaster />
       </body>
     </html>

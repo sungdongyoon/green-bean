@@ -7,9 +7,14 @@ import { GreenBean } from "@/types/types";
 import { Button } from "@/components/ui/button";
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 const page = () => {
   const [favoriteData, setFavoriteData] = useState<GreenBean[]>([]);
+
+  // 다국어
+  const favoriteLang = useTranslations("Favorite");
+  const tableLang = useTranslations("Table");
 
   const handleBulkDelete = () => {
     if (favoriteData.length === 0) {
@@ -49,13 +54,16 @@ const page = () => {
   return (
     <section className="section">
       <div className="flex items-center justify-between">
-        <h1 className="section-title">찜한 생두 리스트</h1>
+        <h1 className="section-title">{favoriteLang("title")}</h1>
         <Button variant="destructive" size="xs" onClick={handleBulkDelete}>
-          일괄 삭제
+          {favoriteLang("bulkDelete")}
         </Button>
       </div>
 
-      <FavoriteTable data={favoriteData} columns={getColumns("delete")} />
+      <FavoriteTable
+        data={favoriteData}
+        columns={getColumns("delete", tableLang)}
+      />
     </section>
   );
 };

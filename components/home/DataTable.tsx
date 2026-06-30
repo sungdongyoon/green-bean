@@ -40,6 +40,7 @@ import { FaMapLocation, FaShop } from "react-icons/fa6";
 import { useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
 import HeaderSearch from "@/components/common/HeaderSearch";
+import { useTranslations } from "next-intl";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -62,6 +63,11 @@ export function DataTable<TData, TValue>({
   // 헤더 검색 input값
   const params = useSearchParams();
   const keyword = params.get("keyword") ?? "";
+
+  // 다국어
+  const vendorLang = useTranslations("Vendor");
+  const originLang = useTranslations("Origin");
+  const homeLang = useTranslations("Home");
 
   const table = useReactTable({
     data,
@@ -134,7 +140,7 @@ export function DataTable<TData, TValue>({
             <Button size="icon-xs" variant="outline">
               <FaShop className="text-accent" />
             </Button>
-            판매사
+            {vendorLang("title")}
           </FieldLegend>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-3">
             {vendors.map((vendor) => (
@@ -158,7 +164,7 @@ export function DataTable<TData, TValue>({
                   className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
                 <FieldLabel htmlFor={vendor} className="text-[0.8rem]">
-                  {vendor}
+                  {vendorLang(vendor)}
                 </FieldLabel>
               </Field>
             ))}
@@ -169,7 +175,7 @@ export function DataTable<TData, TValue>({
             <Button size="icon-xs" variant="outline">
               <FaMapLocation className="text-accent" />
             </Button>
-            국가
+            {originLang("title")}
           </FieldLegend>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3">
             {sortedOriginList.map((origin) => (
@@ -201,7 +207,7 @@ export function DataTable<TData, TValue>({
                   htmlFor={origin.originKey}
                   className="text-[0.8rem]"
                 >
-                  {origin.originName}
+                  {originLang(origin.originKey)}
                 </FieldLabel>
               </Field>
             ))}
@@ -210,7 +216,7 @@ export function DataTable<TData, TValue>({
       </div>
       <div className="flex justify-between">
         <div className="flex items-center space-x-2">
-          <p className="text-sm font-regular">Rows per page</p>
+          <p className="text-sm font-regular">{homeLang("perPage")}</p>
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value) => {
@@ -243,7 +249,7 @@ export function DataTable<TData, TValue>({
             className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
           />
           <label htmlFor="status" className="text-xs font-medium">
-            판매 가능한 상품만 보기
+            {homeLang("statusOk")}
           </label>
         </div>
       </div>

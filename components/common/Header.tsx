@@ -5,6 +5,7 @@ import HeaderSearch from "./HeaderSearch";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { FaRegHeart, FaRegMoon } from "react-icons/fa";
+import LangToggle from "./LangToggle";
 
 const Header = () => {
   const router = useRouter();
@@ -40,6 +41,7 @@ const Header = () => {
           >
             <FaRegMoon className="text-[1.2rem]" />
           </div>
+          <LangToggle />
         </div>
       </div>
     </header>

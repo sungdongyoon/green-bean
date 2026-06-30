@@ -1,0 +1,72 @@
+{
+  "Header": {
+    "input": "Please enter the name of the greenbean.",
+    "search": "search",
+    "lang": "Language"
+  },
+  "Country": {
+    "kr": "KR",
+    "en": "EN"
+  },
+  "Table": {
+    "vendor": "vendor",
+    "origin": "origin",
+    "name": "name",
+    "unit": "unit",
+    "price": "price",
+    "buy": "buy",
+    "favorite": "favorite",
+    "delete": "delete"
+  },
+  "Home": {
+    "title": "Detailed Greenbean Search",
+    "perPage": "per page",
+    "statusOk": "view only available products"
+  },
+  "Favorite": {
+    "title": "List of Saved Greanbean",
+    "bulkDelete": "bulk delete",
+    "buy": "buy",
+    "delete": "delete"
+  },
+  "Vendor": {
+    "title": "vendor",
+    "GSC 인터내셔널": "GSC International",
+    "모모스커피": "Momos Coffee",
+    "엠아이커피": "MI Coffee",
+    "커피리브레": "Coffee Libre",
+    "코빈즈커피": "Cobeans Coffee"
+  },
+  "Origin": {
+    "title": "origin",
+    "guatemala": "guatemala",
+    "nicaragua": "nicaragua",
+    "dominicanRepublic": "dominicanRepublic",
+    "laos": "laos",
+    "rwanda": "rwanda",
+    "mexico": "mexico",
+    "myanmar": "myanmar",
+    "vietnam": "vietnam",
+    "bolivia": "bolivia",
+    "burundi": "burundi",
+    "brazil": "brazil",
+    "ecuador": "ecuador",
+    "ethiopia": "ethiopia",
+    "elSalvador": "elSalvador",
+    "yemen": "yemen",
+    "honduras": "honduras",
+    "uganda": "uganda",
+    "india": "india",
+    "indonesia": "indonesia",
+    "china": "china",
+    "kenya": "kenya",
+    "costaRica": "costaRica",
+    "colombia": "colombia",
+    "congo": "congo",
+    "tanzania": "tanzania",
+    "thailand": "thailand",
+    "panama": "panama",
+    "papuaNewGuinea": "papuaNewGuinea",
+    "peru": "peru"
+  }
+}

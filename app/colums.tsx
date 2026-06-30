@@ -6,13 +6,19 @@ import { Button } from "@/components/ui/button";
 import { ActionColumn, GreenBean } from "@/types/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, ExternalLink } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+type TFunction = ReturnType<typeof useTranslations>;
 
 // 액션 컬럼 함수(삭제, 찜하기 컬럼)
-function getActionColumn(col: ActionColumn): ColumnDef<GreenBean> {
+function getActionColumn(
+  col: ActionColumn,
+  t: TFunction,
+): ColumnDef<GreenBean> {
   if (col === "delete") {
     return {
       id: "delete",
-      header: () => <p className="text-center">삭제</p>,
+      header: () => <p className="text-center">{t("delete")}</p>,
       cell: ({ row }) => {
         return <FavoriteDeleteButton beanData={row.original} />;
       },
@@ -22,7 +28,7 @@ function getActionColumn(col: ActionColumn): ColumnDef<GreenBean> {
 
   return {
     id: "favorite",
-    header: () => <p className="text-center">찜하기</p>,
+    header: () => <p className="text-center">{t("vendor")}</p>,
     cell: ({ row }) => {
       return <FavoriteButton beanData={row.original} />;
     },
@@ -30,7 +36,10 @@ function getActionColumn(col: ActionColumn): ColumnDef<GreenBean> {
   };
 }
 
-export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
+export const getColumns = (
+  col: ActionColumn,
+  t: TFunction,
+): ColumnDef<GreenBean>[] => [
   {
     accessorKey: "vendorName",
     header: ({ column }) => {
@@ -41,7 +50,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
             className="text-gray-500 hover:bg-muted/0 cursor-pointer"
           >
-            Vendor
+            {t("vendor")}
             <ArrowUpDown className="h-4 w-4" />
           </Button>
         </div>
@@ -68,7 +77,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
             className="text-gray-500 hover:bg-muted/0 cursor-pointer"
           >
-            Origin
+            {t("origin")}
             <ArrowUpDown className="h-4 w-4" />
           </Button>
         </div>
@@ -94,7 +103,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           className="text-gray-500 hover:bg-muted/0 cursor-pointer"
         >
-          Name
+          {t("name")}
           <ArrowUpDown className="h-4 w-4" />
         </Button>
       );
@@ -114,7 +123,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
             className="text-gray-500 hover:bg-muted/0 cursor-pointer"
           >
-            Unit
+            {t("unit")}
             <ArrowUpDown className="h-4 w-4" />
           </Button>
         </div>
@@ -135,7 +144,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
             className="text-gray-500 hover:bg-muted/0 cursor-pointer"
           >
-            Price
+            {t("price")}
             <ArrowUpDown className="h-4 w-4" />
           </Button>
         </div>
@@ -155,7 +164,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
   {
     accessorKey: "productUrl",
     header: ({ column }) => {
-      return <p className="text-center">Buy</p>;
+      return <p className="text-center">{t("buy")}</p>;
     },
     cell: ({ row }) => {
       const url = row.original.productUrl;
@@ -171,7 +180,7 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
             className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
           >
             <a href={url} target="_blank">
-              구매
+              {t("buy")}
               <ExternalLink className="ml-1 size-3" />
             </a>
           </Button>
@@ -190,5 +199,5 @@ export const getColumns = (col: ActionColumn): ColumnDef<GreenBean>[] => [
       return filterValue.includes(value);
     },
   },
-  getActionColumn(col),
+  getActionColumn(col, t),
 ];

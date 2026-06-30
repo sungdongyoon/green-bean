@@ -1,0 +1,72 @@
+{
+  "Header": {
+    "input": "생두명을 입력해주세요.",
+    "search": "검색",
+    "lang": "언어 선택"
+  },
+  "Country": {
+    "kr": "한국어",
+    "en": "영어"
+  },
+  "Table": {
+    "vendor": "판매사",
+    "origin": "국가",
+    "name": "생두명",
+    "unit": "단위",
+    "price": "가격",
+    "buy": "구매",
+    "favorite": "찜하기",
+    "delete": "삭제"
+  },
+  "Home": {
+    "title": "생두 상세검색",
+    "perPage": "개씩 보기",
+    "statusOk": "판매 가능한 상품만 보기"
+  },
+  "Favorite": {
+    "title": "찜한 생두 리스트",
+    "bulkDelete": "일괄 삭제",
+    "buy": "구매",
+    "delete": "삭제"
+  },
+  "Vendor": {
+    "title": "판매사",
+    "GSC 인터내셔널": "GSC 인터내셔널",
+    "모모스커피": "모모스커피",
+    "엠아이커피": "엠아이커피",
+    "커피리브레": "커피리브레",
+    "코빈즈커피": "코빈즈커피"
+  },
+  "Origin": {
+    "title": "국가",
+    "guatemala": "과테말라",
+    "nicaragua": "니카라과",
+    "dominicanRepublic": "도미니카공화국",
+    "laos": "라오스",
+    "rwanda": "르완다",
+    "mexico": "멕시코",
+    "myanmar": "미얀마",
+    "vietnam": "베트남",
+    "bolivia": "볼리비아",
+    "burundi": "부룬디",
+    "brazil": "브라질",
+    "ecuador": "에콰도르",
+    "ethiopia": "에티오피아",
+    "elSalvador": "엘살바도르",
+    "yemen": "예멘",
+    "honduras": "온두라스",
+    "uganda": "우간다",
+    "india": "인도",
+    "indonesia": "인도네시아",
+    "china": "중국",
+    "kenya": "케냐",
+    "costaRica": "코스타리카",
+    "colombia": "콜롬비아",
+    "congo": "콩고",
+    "tanzania": "탄자니아",
+    "thailand": "태국",
+    "panama": "파나마",
+    "papuaNewGuinea": "파푸아뉴기니",
+    "peru": "페루"
+  }
+}
