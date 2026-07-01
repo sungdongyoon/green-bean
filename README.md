@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bean Bridge
 
-## Getting Started
+## 🖥️ 프로젝트 소개
 
-First, run the development server:
+주요 생두 판매업체의 생두 리스트를 한번에 확인할 수 있는 사이드 프로젝트입니다.
+생두 구매 및 정보 확인을 위해 매번 여러 홈페이지에 접속하여 정보를 확인해야 하는 불편함이 있었습니다. 이러한 불편함을 해결하기 위해 주요 판매업체의 생두 정보를 한번에 확인하고 싶어 제작하게 되었습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 주소
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://bean-bridge.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🕰️ 개발 기간
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 2026.06 ~ 2026.07
 
-## Learn More
+## ⚙️ 사용 기술
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js
+- TypeScript
+- Next-intl
+- Next-themes
+- Shadcn UI
+- Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 주요 기능
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ 판매업체, 국가, 판매 상태 필터
+✅ 생두 검색 기능
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- URL params를 활용하여 검색어 상태 관리
+- 판매업체, 원산지, 판매 상태 기준으로 생두 목록 필터링 가능
+  ✅ 찜하기
+- localstorage를 활용하여 관심 생두 저장 가능
+  ✅ 모드 변경
+- next-theme를 활용하여 라이트/다크모드 기능 구현
+  ✅ 다국어 기능
+- next-intl를 활용하여 다국어 선택 기능 구현
