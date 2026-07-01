@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
@@ -41,6 +42,7 @@ import { useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
 import HeaderSearch from "@/components/common/HeaderSearch";
 import { useTranslations } from "next-intl";
+import { FaSearch } from "react-icons/fa";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -117,12 +119,16 @@ export function DataTable<TData, TValue>({
   return (
     <div className="flex flex-col gap-3">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-        <FieldGroup className="flex md:hidden bg-white border border-gray-2 p-3 rounded-md pb-5 md:pb-3">
-          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
-            <Button size="icon-xs" variant="outline">
-              <FaShop className="text-accent" />
+        <FieldGroup className="flex md:hidden border border-gray-2 p-3 rounded-md pb-5 md:pb-3">
+          <FieldLegend className="text-[0.8rem] text-gray-8 font-semibold mb-0 flex items-center gap-2">
+            <Button
+              size="icon-xs"
+              variant="outline"
+              className="border-gray-2 bg-accent-foreground"
+            >
+              <FaSearch className="text-primary" />
             </Button>
-            생두 검색
+            {homeLang("search")}
           </FieldLegend>
           <HeaderSearch className="w-full" />
           {/* <Input
@@ -135,8 +141,8 @@ export function DataTable<TData, TValue>({
             className="w-full bg-white"
           /> */}
         </FieldGroup>
-        <FieldGroup className="bg-white border border-gray-2 p-3 rounded-md">
-          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
+        <FieldGroup className="border border-gray-2 p-3 rounded-md">
+          <FieldLegend className="text-[0.8rem] text-gray-8 font-semibold mb-0 flex items-center gap-2">
             <Button
               size="icon-xs"
               variant="outline"
@@ -165,7 +171,7 @@ export function DataTable<TData, TValue>({
                       .getColumn("vendorName")
                       ?.setFilterValue(next.length ? next : undefined);
                   }}
-                  className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+                  className="data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
                 <FieldLabel htmlFor={vendor} className="text-[0.8rem]">
                   {vendorLang(vendor)}
@@ -174,8 +180,8 @@ export function DataTable<TData, TValue>({
             ))}
           </div>
         </FieldGroup>
-        <FieldGroup className="lg:col-span-3 bg-white border border-gray-2 p-3 rounded-md">
-          <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
+        <FieldGroup className="lg:col-span-3 border border-gray-2 p-3 rounded-md">
+          <FieldLegend className="text-[0.8rem] text-gray-8 font-semibold mb-0 flex items-center gap-2">
             <Button
               size="icon-xs"
               variant="outline"
@@ -208,7 +214,7 @@ export function DataTable<TData, TValue>({
                       .getColumn("origin")
                       ?.setFilterValue(next.length ? next : undefined);
                   }}
-                  className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+                  className="data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
 
                 <FieldLabel
@@ -230,15 +236,18 @@ export function DataTable<TData, TValue>({
               table.setPageSize(Number(value));
             }}
           >
-            <SelectTrigger className="h-8 w-[70px] bg-white">
+            <SelectTrigger className="h-8 w-[70px]">
               <SelectValue placeholder={table.getState().pagination.pageSize} />
             </SelectTrigger>
-            <SelectContent side="top">
-              {[10, 20, 25, 30, 40, 50].map((pageSize) => (
-                <SelectItem key={pageSize} value={`${pageSize}`}>
-                  {pageSize}
-                </SelectItem>
-              ))}
+
+            <SelectContent side="top" className="">
+              <SelectGroup className="**:data-[slot=select-item]:focus:bg-secondary">
+                {[10, 20, 25, 30, 40, 50].map((pageSize) => (
+                  <SelectItem key={pageSize} value={`${pageSize}`}>
+                    {pageSize}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
             </SelectContent>
           </Select>
           <p className="text-sm font-regular">{homeLang("perPage")}</p>
@@ -254,7 +263,7 @@ export function DataTable<TData, TValue>({
                 .getColumn("status")
                 ?.setFilterValue(checked ? "available" : undefined);
             }}
-            className="bg-white data-checked:bg-black data-checked:text-white data-checked:border-0"
+            className="data-checked:bg-black data-checked:text-white data-checked:border-0"
           />
           <label htmlFor="status" className="text-xs font-medium">
             {homeLang("statusOk")}
@@ -262,8 +271,8 @@ export function DataTable<TData, TValue>({
         </div>
       </div>
       <div className="overflow-hidden rounded-md border border-gray-2">
-        <Table className="bg-white table-fixed w-full">
-          <TableHeader className="bg-gray-100">
+        <Table className="table-fixed w-full">
+          <TableHeader className="bg-gray-3">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id} className="hover:bg-muted/0">
                 {headerGroup.headers.map((header) => {

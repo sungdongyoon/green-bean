@@ -21,7 +21,8 @@
   "Home": {
     "title": "생두 상세검색",
     "perPage": "개씩 보기",
-    "statusOk": "판매 가능한 상품만 보기"
+    "statusOk": "판매 가능한 상품만 보기",
+    "search": "생두 검색"
   },
   "Favorite": {
     "title": "찜한 생두 리스트",

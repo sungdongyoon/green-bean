@@ -21,7 +21,8 @@
   "Home": {
     "title": "Detailed Greenbean Search",
     "perPage": "per page",
-    "statusOk": "view only available products"
+    "statusOk": "view only available products",
+    "search": "Search Greenbean"
   },
   "Favorite": {
     "title": "List of Saved Greanbean",

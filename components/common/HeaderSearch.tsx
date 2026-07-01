@@ -44,7 +44,7 @@ const HeaderSearch = ({ className }: { className: string }) => {
         placeholder={headerLang("input")}
         value={keyword}
         onChange={(event) => setKeyword(event.target.value)}
-        className="w-full min-w-0 bg-white rounded-sm"
+        className="w-full min-w-0 bg-white border-gray-3 rounded-sm"
       />
       <Button
         type="submit"

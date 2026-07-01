@@ -48,7 +48,7 @@ export const getColumns = (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+            className="text-gray-7 hover:bg-muted/0 cursor-pointer"
           >
             {t("vendor")}
             <ArrowUpDown className="h-4 w-4" />
@@ -75,7 +75,7 @@ export const getColumns = (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+            className="text-gray-7 hover:bg-muted/0 cursor-pointer"
           >
             {t("origin")}
             <ArrowUpDown className="h-4 w-4" />
@@ -101,7 +101,7 @@ export const getColumns = (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+          className="text-gray-7 hover:bg-muted/0 cursor-pointer"
         >
           {t("name")}
           <ArrowUpDown className="h-4 w-4" />
@@ -121,7 +121,7 @@ export const getColumns = (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+            className="text-gray-7 hover:bg-muted/0 cursor-pointer"
           >
             {t("unit")}
             <ArrowUpDown className="h-4 w-4" />
@@ -142,7 +142,7 @@ export const getColumns = (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            className="text-gray-500 hover:bg-muted/0 cursor-pointer"
+            className="text-gray-7 hover:bg-muted/0 cursor-pointer"
           >
             {t("price")}
             <ArrowUpDown className="h-4 w-4" />
@@ -177,7 +177,7 @@ export const getColumns = (
             asChild
             size="sm"
             variant="outline"
-            className="bg-secondary text-white border-0 hover:bg-primary hover:text-muted"
+            className="bg-secondary text-white border-0 hover:bg-primary hover:text-white"
           >
             <a href={url} target="_blank">
               {t("buy")}

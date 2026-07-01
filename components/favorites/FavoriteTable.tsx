@@ -66,8 +66,8 @@ export function FavoriteTable<TData, TValue>({
         </div>
       ) : (
         <div className="overflow-hidden rounded-md border border-gray-2">
-          <Table className="bg-white table-fixed w-full">
-            <TableHeader className="bg-gray-100">
+          <Table className="table-fixed w-full">
+            <TableHeader className="bg-gray-3">
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id} className="hover:bg-muted/0">
                   {headerGroup.headers.map((header) => {
