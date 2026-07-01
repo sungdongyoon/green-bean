@@ -55,7 +55,12 @@ const page = () => {
     <section className="section">
       <div className="flex items-center justify-between">
         <h1 className="section-title">{favoriteLang("title")}</h1>
-        <Button variant="destructive" size="xs" onClick={handleBulkDelete}>
+        <Button
+          variant="destructive"
+          size="xs"
+          onClick={handleBulkDelete}
+          className="mb-2.5 cursor-pointer"
+        >
           {favoriteLang("bulkDelete")}
         </Button>
       </div>

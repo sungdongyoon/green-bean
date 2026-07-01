@@ -117,7 +117,7 @@ export function DataTable<TData, TValue>({
   return (
     <div className="flex flex-col gap-3">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-        <FieldGroup className="flex md:hidden bg-white border border-gray-200 p-3 rounded-md pb-5 md:pb-3">
+        <FieldGroup className="flex md:hidden bg-white border border-gray-2 p-3 rounded-md pb-5 md:pb-3">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
             <Button size="icon-xs" variant="outline">
               <FaShop className="text-accent" />
@@ -135,10 +135,14 @@ export function DataTable<TData, TValue>({
             className="w-full bg-white"
           /> */}
         </FieldGroup>
-        <FieldGroup className="bg-white border border-gray-200 p-3 rounded-md">
+        <FieldGroup className="bg-white border border-gray-2 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
-            <Button size="icon-xs" variant="outline">
-              <FaShop className="text-accent" />
+            <Button
+              size="icon-xs"
+              variant="outline"
+              className="border-gray-2 bg-accent-foreground"
+            >
+              <FaShop className="text-primary" />
             </Button>
             {vendorLang("title")}
           </FieldLegend>
@@ -170,10 +174,14 @@ export function DataTable<TData, TValue>({
             ))}
           </div>
         </FieldGroup>
-        <FieldGroup className="lg:col-span-3 bg-white border border-gray-200 p-3 rounded-md">
+        <FieldGroup className="lg:col-span-3 bg-white border border-gray-2 p-3 rounded-md">
           <FieldLegend className="text-[0.8rem] text-gray-400 font-semibold mb-0 flex items-center gap-2">
-            <Button size="icon-xs" variant="outline">
-              <FaMapLocation className="text-accent" />
+            <Button
+              size="icon-xs"
+              variant="outline"
+              className="border-gray-2 bg-accent-foreground"
+            >
+              <FaMapLocation className="text-primary" />
             </Button>
             {originLang("title")}
           </FieldLegend>
@@ -216,7 +224,6 @@ export function DataTable<TData, TValue>({
       </div>
       <div className="flex justify-between">
         <div className="flex items-center space-x-2">
-          <p className="text-sm font-regular">{homeLang("perPage")}</p>
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value) => {
@@ -234,6 +241,7 @@ export function DataTable<TData, TValue>({
               ))}
             </SelectContent>
           </Select>
+          <p className="text-sm font-regular">{homeLang("perPage")}</p>
         </div>
         <div className="flex items-center space-x-2">
           <Checkbox
@@ -253,7 +261,7 @@ export function DataTable<TData, TValue>({
           </label>
         </div>
       </div>
-      <div className="overflow-hidden rounded-md border">
+      <div className="overflow-hidden rounded-md border border-gray-2">
         <Table className="bg-white table-fixed w-full">
           <TableHeader className="bg-gray-100">
             {table.getHeaderGroups().map((headerGroup) => (

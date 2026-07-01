@@ -34,15 +34,15 @@ const LangToggle = () => {
 
   return (
     <Select value={locale} onValueChange={handleChangeLang}>
-      <SelectTrigger className="border-0">
+      <SelectTrigger className="border-0 cursor-pointer">
         <SelectValue />
       </SelectTrigger>
 
-      <SelectContent>
-        <SelectGroup>
+      <SelectContent position="popper">
+        <SelectGroup className="**:data-[slot=select-item]:focus:bg-secondary">
           <SelectLabel>{headerLang("lang")}</SelectLabel>
-          <SelectItem value="ko">{countryLang("kr")}</SelectItem>
-          <SelectItem value="en">{countryLang("en")}</SelectItem>
+          <SelectItem value="ko">KR</SelectItem>
+          <SelectItem value="en">EN</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>

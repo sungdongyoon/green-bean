@@ -177,7 +177,7 @@ export const getColumns = (
             asChild
             size="sm"
             variant="outline"
-            className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
+            className="bg-secondary text-white border-0 hover:bg-primary hover:text-muted"
           >
             <a href={url} target="_blank">
               {t("buy")}

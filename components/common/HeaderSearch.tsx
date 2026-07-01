@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
+import { Search } from "lucide-react";
 
 const HeaderSearch = ({ className }: { className: string }) => {
   const router = useRouter();
@@ -43,14 +44,15 @@ const HeaderSearch = ({ className }: { className: string }) => {
         placeholder={headerLang("input")}
         value={keyword}
         onChange={(event) => setKeyword(event.target.value)}
-        className="w-full min-w-0 bg-white"
+        className="w-full min-w-0 bg-white rounded-sm"
       />
       <Button
         type="submit"
         variant="outline"
-        className="bg-accent text-white border-0 hover:bg-accent/80 hover:text-muted"
+        className="bg-secondary text-white border-0 rounded-sm hover:bg-primary hover:text-muted cursor-pointer"
       >
-        {headerLang("search")}
+        {/* {headerLang("search")} */}
+        <Search />
       </Button>
     </form>
   );

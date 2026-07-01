@@ -31,7 +31,7 @@ const TablePagination = ({ table }: { table: any }) => {
             className={
               !table.getCanPreviousPage()
                 ? "pointer-events-none opacity-50"
-                : ""
+                : "hover:bg-third"
             }
             onClick={(event) => {
               event.preventDefault();
@@ -60,6 +60,7 @@ const TablePagination = ({ table }: { table: any }) => {
                     event.preventDefault();
                     table.setPageIndex(page);
                   }}
+                  className="data-active:bg-secondary data-active:text-white border-none hover:bg-primary hover:text-white"
                 >
                   {page + 1}
                 </PaginationLink>
@@ -73,7 +74,9 @@ const TablePagination = ({ table }: { table: any }) => {
             href="#"
             aria-disabled={!table.getCanNextPage()}
             className={
-              !table.getCanNextPage() ? "pointer-events-none opacity-50" : ""
+              !table.getCanNextPage()
+                ? "pointer-events-none opacity-50"
+                : "hover:bg-third"
             }
             onClick={(event) => {
               event.preventDefault();

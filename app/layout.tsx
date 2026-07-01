@@ -9,6 +9,7 @@ import { Toaster } from "sonner";
 import { pretendard_medium } from "@/font/localFont";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { ThemeProvider } from "@/provider/ThemeProvider";
 
 // import { Geist } from "next/font/google";
 // import { cn } from "@/lib/utils";
@@ -32,24 +33,31 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
       <body className={pretendard_medium.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <QueryProvider>
-            <SidebarProvider>
-              <TooltipProvider>
-                {/* <AppSidebar /> */}
-                <div className="w-full min-h-screen flex flex-col">
-                  <Header />
-                  <main className="w-full flex justify-center py-12 px-3">
-                    {/* <SidebarTrigger /> */}
-                    {children}
-                  </main>
-                </div>
-              </TooltipProvider>
-            </SidebarProvider>
-          </QueryProvider>
-        </NextIntlClientProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <QueryProvider>
+              <SidebarProvider>
+                <TooltipProvider>
+                  {/* <AppSidebar /> */}
+                  <div className="w-full min-h-screen flex flex-col">
+                    <Header />
+                    <main className="w-full flex justify-center py-12 px-3">
+                      {/* <SidebarTrigger /> */}
+                      {children}
+                    </main>
+                  </div>
+                </TooltipProvider>
+              </SidebarProvider>
+            </QueryProvider>
+          </NextIntlClientProvider>
+        </ThemeProvider>
         <Toaster />
       </body>
     </html>

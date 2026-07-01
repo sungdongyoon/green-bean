@@ -65,7 +65,7 @@ export function FavoriteTable<TData, TValue>({
           <Loading />
         </div>
       ) : (
-        <div className="overflow-hidden rounded-md border">
+        <div className="overflow-hidden rounded-md border border-gray-2">
           <Table className="bg-white table-fixed w-full">
             <TableHeader className="bg-gray-100">
               {table.getHeaderGroups().map((headerGroup) => (
