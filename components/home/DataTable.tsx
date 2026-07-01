@@ -173,7 +173,10 @@ export function DataTable<TData, TValue>({
                   }}
                   className="data-checked:bg-black data-checked:text-white data-checked:border-0"
                 />
-                <FieldLabel htmlFor={vendor} className="text-[0.8rem]">
+                <FieldLabel
+                  htmlFor={vendor}
+                  className="text-[0.7rem] md:text-[0.8rem] truncate"
+                >
                   {vendorLang(vendor)}
                 </FieldLabel>
               </Field>
@@ -219,7 +222,7 @@ export function DataTable<TData, TValue>({
 
                 <FieldLabel
                   htmlFor={origin.originKey}
-                  className="text-[0.8rem]"
+                  className="text-[0.7rem] md:text-[0.8rem] truncate"
                 >
                   {originLang(origin.originKey)}
                 </FieldLabel>
@@ -263,9 +266,12 @@ export function DataTable<TData, TValue>({
                 .getColumn("status")
                 ?.setFilterValue(checked ? "available" : undefined);
             }}
-            className="data-checked:bg-black data-checked:text-white data-checked:border-0"
+            className="data-checked:bg-black data-checked:text-white data-checked:border-0 cursor-pointer"
           />
-          <label htmlFor="status" className="text-xs font-medium">
+          <label
+            htmlFor="status"
+            className="text-xs font-medium cursor-pointer"
+          >
             {homeLang("statusOk")}
           </label>
         </div>

@@ -37,21 +37,23 @@ const HeaderSearch = ({ className }: { className: string }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`${className} flex gap-1`}>
+    <form
+      onSubmit={handleSubmit}
+      className={`${className} hidden md:flex gap-1`}
+    >
       <Input
         id="search"
         type="search"
         placeholder={headerLang("input")}
         value={keyword}
         onChange={(event) => setKeyword(event.target.value)}
-        className="w-full min-w-0 bg-white border-gray-3 rounded-sm"
+        className="w-full min-w-0 bg-white border-gray-3 rounded-sm text-[0.8rem]"
       />
       <Button
         type="submit"
         variant="outline"
         className="bg-secondary text-white border-0 rounded-sm hover:bg-primary hover:text-muted cursor-pointer"
       >
-        {/* {headerLang("search")} */}
         <Search />
       </Button>
     </form>

@@ -9,6 +9,7 @@ import LangToggle from "./LangToggle";
 import { ModeToggle } from "./ModeToggle";
 import Link from "next/link";
 import { LucideHeart } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 const Header = () => {
   const router = useRouter();
@@ -26,19 +27,24 @@ const Header = () => {
             className="h-8 w-auto"
           />
         </Link>
-        <div className="hidden md:flex items-center shrink-0 gap-10">
+        <div className="flex items-center shrink-0 gap-10">
           <Suspense fallback={null}>
             {pathName === "/" && (
               <HeaderSearch className="w-[300px] lg:w-[400px]" />
             )}
           </Suspense>
           <div className="flex items-center">
-            <div
-              className="cursor-pointer mr-3"
-              onClick={() => router.push("/favorites")}
-            >
-              <LucideHeart className="size-5" />
-            </div>
+            <Tooltip>
+              <TooltipTrigger className="mr-3">
+                <div
+                  className="cursor-pointer"
+                  onClick={() => router.push("/favorites")}
+                >
+                  <LucideHeart className="size-5" />
+                </div>
+              </TooltipTrigger>
+              <TooltipContent className="text-[0.6rem]">찜 목록</TooltipContent>
+            </Tooltip>
             <ModeToggle />
             <LangToggle />
           </div>

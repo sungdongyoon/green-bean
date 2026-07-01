@@ -28,7 +28,7 @@ function getActionColumn(
 
   return {
     id: "favorite",
-    header: () => <p className="text-center">{t("vendor")}</p>,
+    header: () => <p className="text-center">{t("favorite")}</p>,
     cell: ({ row }) => {
       return <FavoriteButton beanData={row.original} />;
     },
