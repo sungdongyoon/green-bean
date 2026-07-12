@@ -37,7 +37,7 @@ import {
   FieldLegend,
 } from "@/components/ui/field";
 import { ORIGIN_LIST } from "@/constants/originList";
-import { FaMapLocation, FaShop } from "react-icons/fa6";
+import { FaMapLocation, FaRotate, FaShop } from "react-icons/fa6";
 import { useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
 import HeaderSearch from "@/components/common/HeaderSearch";
@@ -74,6 +74,7 @@ export function DataTable<TData, TValue>({
   const vendorLang = useTranslations("Vendor");
   const originLang = useTranslations("Origin");
   const homeLang = useTranslations("Home");
+  const tableLang = useTranslations("Table");
 
   const table = useReactTable({
     data,
@@ -114,6 +115,11 @@ export function DataTable<TData, TValue>({
 
   const selectedOrigin =
     (table.getColumn("origin")?.getFilterValue() as string[]) ?? [];
+
+  // 검색 필터 초기화
+  const handleResetFilter = () => {
+    setColumnFilters([]);
+  };
 
   // 검색 키워드 동작
   useEffect(() => {
@@ -258,6 +264,10 @@ export function DataTable<TData, TValue>({
             </SelectContent>
           </Select>
           <p className="text-sm font-regular">{homeLang("perPage")}</p>
+          <Button size="sm" onClick={handleResetFilter}>
+            {homeLang("resetFilter")}
+            <FaRotate className="ml-1" />
+          </Button>
         </div>
         <div className="flex items-center space-x-2">
           <Checkbox
@@ -327,7 +337,7 @@ export function DataTable<TData, TValue>({
                   colSpan={columns.length - 1}
                   className="h-24 text-center"
                 >
-                  No results.
+                  {tableLang("noResult")}
                 </TableCell>
               </TableRow>
             )}

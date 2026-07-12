@@ -16,13 +16,15 @@
     "price": "가격",
     "buy": "구매",
     "favorite": "찜하기",
-    "delete": "삭제"
+    "delete": "삭제",
+    "noResult": "조건에 맞는 생두가 없습니다."
   },
   "Home": {
     "title": "생두 상세검색",
     "perPage": "개씩 보기",
     "statusOk": "판매 가능한 상품만 보기",
-    "search": "생두 검색"
+    "search": "생두 검색",
+    "resetFilter": "필터 초기화"
   },
   "Favorite": {
     "title": "찜한 생두 리스트",

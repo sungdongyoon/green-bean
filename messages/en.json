@@ -16,13 +16,15 @@
     "price": "price",
     "buy": "buy",
     "favorite": "favorite",
-    "delete": "delete"
+    "delete": "delete",
+    "noResult": "There are no green beans that meet the criteria."
   },
   "Home": {
     "title": "Detailed Greenbean Search",
     "perPage": "per page",
     "statusOk": "view only available products",
-    "search": "Search Greenbean"
+    "search": "Search Greenbean",
+    "resetFilter": "Reset Filter"
   },
   "Favorite": {
     "title": "List of Saved Greanbean",
