@@ -30,7 +30,7 @@ const Header = () => {
         <div className="flex items-center shrink-0 gap-10">
           <Suspense fallback={null}>
             {pathName === "/" && (
-              <HeaderSearch className="w-[300px] lg:w-[400px]" />
+              <HeaderSearch className="w-[300px] lg:w-[400px] hidden md:flex" />
             )}
           </Suspense>
           <div className="flex items-center">

@@ -22,8 +22,6 @@ const Home = () => {
   const homeLang = useTranslations("Home");
   const tableLang = useTranslations("Table");
 
-  console.log("Data", greenbeanData);
-
   return (
     <section className="section">
       <h1 className="section-title">{homeLang("title")}</h1>

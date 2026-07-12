@@ -37,10 +37,7 @@ const HeaderSearch = ({ className }: { className: string }) => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={`${className} hidden md:flex gap-1`}
-    >
+    <form onSubmit={handleSubmit} className={`${className} gap-1`}>
       <Input
         id="search"
         type="search"

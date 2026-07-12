@@ -43,6 +43,7 @@ import TablePagination from "@/components/common/TablePagination";
 import HeaderSearch from "@/components/common/HeaderSearch";
 import { useTranslations } from "next-intl";
 import { FaSearch } from "react-icons/fa";
+import { useGreenBeanStore } from "@/store/useGreenBeanStore";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -57,6 +58,9 @@ export function DataTable<TData, TValue>({
   data,
   originData,
 }: DataTableProps<TData, TValue>) {
+  // const data = useGreenBeanStore((state) => state.data)
+  // const originData = useGreenBeanStore((state) => state.originData)
+
   // 정렬
   const [sorting, setSorting] = useState<SortingState>([]);
   // 필터
@@ -130,7 +134,7 @@ export function DataTable<TData, TValue>({
             </Button>
             {homeLang("search")}
           </FieldLegend>
-          <HeaderSearch className="w-full" />
+          <HeaderSearch className="w-full flex md:hidden" />
           {/* <Input
             id="search"
             placeholder="생두명을 입력해주세요."
