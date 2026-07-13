@@ -30,21 +30,14 @@ import {
 } from "@/components/ui/select";
 import React, { useEffect, useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-  FieldLegend,
-} from "@/components/ui/field";
-import { ORIGIN_LIST } from "@/constants/originList";
-import { FaMapLocation, FaRotate, FaShop } from "react-icons/fa6";
+import { FaRotate } from "react-icons/fa6";
 import { useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
-import HeaderSearch from "@/components/common/HeaderSearch";
 import { useTranslations } from "next-intl";
-import { FaSearch } from "react-icons/fa";
 import { GreenBeanData, useGreenBeanStore } from "@/store/useGreenBeanStore";
 import BeanFilter from "./BeanFilter";
+import { FilterSheet } from "../common/FilterSheet";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface DataTableProps {
   columns: ColumnDef<GreenBeanData, unknown>[];
@@ -62,6 +55,8 @@ export function DataTable({ columns }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
   // 필터
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+
+  const isMobile = useIsMobile();
 
   // 헤더 검색 input값
   const params = useSearchParams();
@@ -107,9 +102,9 @@ export function DataTable({ columns }: DataTableProps) {
 
   return (
     <div className="flex flex-col gap-3">
-      <BeanFilter table={table} />
-      <div className="flex justify-between">
-        <div className="flex items-center space-x-2">
+      {isMobile ? <FilterSheet table={table} /> : <BeanFilter table={table} />}
+      <div className="flex justify-between flex-wrap gap-3">
+        <div className="flex items-center flex-wrap gap-3">
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value) => {

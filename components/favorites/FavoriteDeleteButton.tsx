@@ -1,6 +1,5 @@
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { GreenBeanData } from "@/store/useGreenBeanStore";
-import { GreenBean } from "@/types/types";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { toast } from "sonner";
 

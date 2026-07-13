@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { getColumns } from "../colums";
 import { FavoriteTable } from "@/components/favorites/FavoriteTable";
-import { GreenBean } from "@/types/types";
 import { Button } from "@/components/ui/button";
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { toast } from "sonner";

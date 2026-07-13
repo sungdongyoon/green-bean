@@ -4,7 +4,6 @@ import React, { Suspense } from "react";
 import HeaderSearch from "./HeaderSearch";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { FaRegHeart, FaRegMoon } from "react-icons/fa";
 import LangToggle from "./LangToggle";
 import { ModeToggle } from "./ModeToggle";
 import Link from "next/link";
