@@ -8,9 +8,10 @@ import { Button } from "@/components/ui/button";
 import { FAVORITE_KEY } from "@/constants/storageKey";
 import { toast } from "sonner";
 import { useTranslations } from "next-intl";
+import { GreenBeanData } from "@/store/useGreenBeanStore";
 
 const page = () => {
-  const [favoriteData, setFavoriteData] = useState<GreenBean[]>([]);
+  const [favoriteData, setFavoriteData] = useState<GreenBeanData[]>([]);
 
   // 다국어
   const favoriteLang = useTranslations("Favorite");

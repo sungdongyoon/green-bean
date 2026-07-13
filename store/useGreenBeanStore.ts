@@ -4,17 +4,17 @@ import { create } from "zustand";
 type Vendor = (typeof greenbeanData.vendors)[number];
 type Product = Vendor["products"][number];
 
-export type GreenBean = Product & {
+export type GreenBeanData = Product & {
   vendorName: string;
   vendorKey: string;
 };
 
 interface GreenBeanState {
-  data: GreenBean[];
+  data: GreenBeanData[];
   originData: typeof greenbeanData;
 }
 
-const data: GreenBean[] = greenbeanData.vendors.flatMap((vendor) =>
+const data: GreenBeanData[] = greenbeanData.vendors.flatMap((vendor) =>
   vendor.products.map((product) => ({
     ...product,
     vendorName: vendor.name,

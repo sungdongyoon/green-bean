@@ -3,6 +3,7 @@
 import FavoriteDeleteButton from "@/components/favorites/FavoriteDeleteButton";
 import FavoriteButton from "@/components/home/FavoriteButton";
 import { Button } from "@/components/ui/button";
+import { GreenBeanData } from "@/store/useGreenBeanStore";
 import { ActionColumn, GreenBean } from "@/types/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, ExternalLink } from "lucide-react";
@@ -14,7 +15,7 @@ type TFunction = ReturnType<typeof useTranslations>;
 function getActionColumn(
   col: ActionColumn,
   t: TFunction,
-): ColumnDef<GreenBean> {
+): ColumnDef<GreenBeanData> {
   if (col === "delete") {
     return {
       id: "delete",
@@ -39,7 +40,7 @@ function getActionColumn(
 export const getColumns = (
   col: ActionColumn,
   t: TFunction,
-): ColumnDef<GreenBean>[] => [
+): ColumnDef<GreenBeanData>[] => [
   {
     accessorKey: "vendorName",
     header: ({ column }) => {

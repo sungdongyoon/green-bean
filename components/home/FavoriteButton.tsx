@@ -1,18 +1,19 @@
 "use client";
 
 import { FAVORITE_KEY } from "@/constants/storageKey";
+import { GreenBeanData } from "@/store/useGreenBeanStore";
 import { GreenBean } from "@/types/types";
 import { useEffect, useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { toast } from "sonner";
 
-const FavoriteButton = ({ beanData }: { beanData: GreenBean }) => {
+const FavoriteButton = ({ beanData }: { beanData: GreenBeanData }) => {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   useEffect(() => {
     // 로컬 스토리지 값 불러오기
     const store = localStorage.getItem(FAVORITE_KEY);
-    const basket: GreenBean[] = store ? JSON.parse(store) : [];
+    const basket: GreenBeanData[] = store ? JSON.parse(store) : [];
 
     // favorite 상태
     const isAlreadyFavorite = basket.some(
