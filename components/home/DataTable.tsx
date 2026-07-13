@@ -31,7 +31,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { FaRotate } from "react-icons/fa6";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import TablePagination from "@/components/common/TablePagination";
 import { useTranslations } from "next-intl";
 import { GreenBeanData, useGreenBeanStore } from "@/store/useGreenBeanStore";
@@ -56,11 +56,15 @@ export function DataTable({ columns }: DataTableProps) {
   // 필터
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
 
+  // 모바일 환경 구분
   const isMobile = useIsMobile();
 
   // 헤더 검색 input값
   const params = useSearchParams();
   const keyword = params.get("keyword") ?? "";
+
+  const router = useRouter();
+  const pathname = usePathname();
 
   // 다국어
   const homeLang = useTranslations("Home");
@@ -93,6 +97,7 @@ export function DataTable({ columns }: DataTableProps) {
   // 검색 필터 초기화
   const handleResetFilter = () => {
     setColumnFilters([]);
+    router.replace(pathname);
   };
 
   // 검색 키워드 동작
