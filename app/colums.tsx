@@ -2,6 +2,17 @@
 
 import FavoriteDeleteButton from "@/components/favorites/FavoriteDeleteButton";
 import FavoriteButton from "@/components/home/FavoriteButton";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { GreenBeanData } from "@/store/useGreenBeanStore";
 import { ActionColumn, GreenBean } from "@/types/types";
@@ -174,17 +185,40 @@ export const getColumns = (
 
       return (
         <div className="text-center">
-          <Button
-            asChild
-            size="sm"
-            variant="outline"
-            className="bg-secondary text-white border-0 hover:bg-primary hover:text-white"
-          >
-            <a href={url} target="_blank">
-              {t("buy")}
-              <ExternalLink className="ml-1 size-3" />
-            </a>
-          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button
+                size="sm"
+                variant="outline"
+                className="bg-secondary text-white border-0 hover:bg-primary hover:text-white"
+              >
+                {t("buy")}
+                <ExternalLink className="ml-1 size-3" />
+              </Button>
+            </AlertDialogTrigger>
+
+            <AlertDialogContent size="sm">
+              <AlertDialogHeader>
+                <AlertDialogTitle>{t("alertDialogTitle")}</AlertDialogTitle>
+                <AlertDialogDescription>
+                  {t("alertDialogDescription")}
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+
+              <AlertDialogFooter className="bg-white border-gray-2">
+                <AlertDialogCancel className="border-gray-3">
+                  {t("cancel")}
+                </AlertDialogCancel>
+                <AlertDialogAction
+                  onClick={() => {
+                    window.open(url, "_blank", "noopener,noreferrer");
+                  }}
+                >
+                  {t("move")}
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       );
     },

@@ -17,7 +17,11 @@
     "buy": "buy",
     "favorite": "favorite",
     "delete": "delete",
-    "noResult": "There are no green beans that meet the criteria."
+    "noResult": "There are no green beans that meet the criteria.",
+    "alertDialogTitle": "You are being redirected to an external site.",
+    "alertDialogDescription": "You can purchase the product and check the latest information on the seller's page.",
+    "cancel": "cancel",
+    "move": "move"
   },
   "Home": {
     "title": "Detailed Greenbean Search",
@@ -25,6 +29,11 @@
     "statusOk": "view only available products",
     "search": "Search Greenbean",
     "resetFilter": "Reset Filter"
+  },
+  "FilterSheet": {
+    "trigger": "Open Detail Search",
+    "title": "Detailed Greenbean Search",
+    "close": "close"
   },
   "Favorite": {
     "title": "List of Saved Greanbean",

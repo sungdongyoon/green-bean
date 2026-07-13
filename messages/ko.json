@@ -17,7 +17,11 @@
     "buy": "구매",
     "favorite": "찜하기",
     "delete": "삭제",
-    "noResult": "조건에 맞는 생두가 없습니다."
+    "noResult": "조건에 맞는 생두가 없습니다.",
+    "alertDialogTitle": "외부 사이트로 이동합니다",
+    "alertDialogDescription": "상품 구매 및 최신 정보 확인은 판매처 페이지에서 진행됩니다.",
+    "cancel": "취소",
+    "move": "이동"
   },
   "Home": {
     "title": "생두 상세검색",
@@ -25,6 +29,11 @@
     "statusOk": "판매 가능한 상품만 보기",
     "search": "생두 검색",
     "resetFilter": "필터 초기화"
+  },
+  "FilterSheet": {
+    "trigger": "상세검색 열기",
+    "title": "생두 상세검색",
+    "close": "닫기"
   },
   "Favorite": {
     "title": "찜한 생두 리스트",
